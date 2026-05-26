@@ -1,0 +1,55 @@
+\hypertarget{struct_quantum_lib_1_1_alarm_ack__t}{}\section{Quantum\+Lib\+:\+:Alarm\+Ack\+\_\+t Struct Reference}
+\label{struct_quantum_lib_1_1_alarm_ack__t}\index{Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t@{Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t}}
+
+
+{\ttfamily \#include $<$Quantum\+Lib\+Types.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_alarm_ack__t_a63727f64772eb3db71b3bd81ce0ea6a1}{Id}}
+\begin{DoxyCompactList}\small\item\em Id of the alarm, incrementing sequence number. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750}{e\+Alarm\+Type\+\_\+t}} \mbox{\hyperlink{struct_quantum_lib_1_1_alarm_ack__t_a3e330071310ae5fc50e351b9246bbbc6}{Type}}
+\begin{DoxyCompactList}\small\item\em Alarm Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Speicfy the alarm Id and/or type to cancel.~\newline
+Alarms may be cancelled individually, by alarms type or all alarms.~\newline
+For Example -\/ ~\newline
+Using the Id and Type from the alarm list, cancels an individual alarm.~\newline
+Setting Id = 0x\+F\+F\+F\+F\+F\+F\+FF and Type = e\+Alarm\+Type\+Marpa\+Dangerous\+Target cancels all dangerous Target alarms.~\newline
+Setting Id = 0x\+F\+F\+F\+F\+F\+F\+FF and Type = e\+Alarm\+Type\+All cancels all alarms.~\newline
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750}{e\+Alarm\+Type\+\_\+t}} 
+
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca66e51b6ee77469163792596584c4711b}{e\+Setting\+Alarm\+Ack}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_quantum_lib_1_1_alarm_ack__t_a63727f64772eb3db71b3bd81ce0ea6a1}\label{struct_quantum_lib_1_1_alarm_ack__t_a63727f64772eb3db71b3bd81ce0ea6a1}} 
+\index{Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t@{Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t}!Id@{Id}}
+\index{Id@{Id}!Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t@{Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t}}
+\subsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily uint32\+\_\+t Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t\+::\+Id}
+
+
+
+Id of the alarm, incrementing sequence number. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_alarm_ack__t_a3e330071310ae5fc50e351b9246bbbc6}\label{struct_quantum_lib_1_1_alarm_ack__t_a3e330071310ae5fc50e351b9246bbbc6}} 
+\index{Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t@{Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t}!Type@{Type}}
+\index{Type@{Type}!Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t@{Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750}{e\+Alarm\+Type\+\_\+t}} Quantum\+Lib\+::\+Alarm\+Ack\+\_\+t\+::\+Type}
+
+
+
+Alarm Type. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\mbox{\hyperlink{_quantum_lib_types_8h}{Quantum\+Lib\+Types.\+h}}\end{DoxyCompactItemize}

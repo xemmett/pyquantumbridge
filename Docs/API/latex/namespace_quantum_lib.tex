@@ -1,0 +1,1049 @@
+\hypertarget{namespace_quantum_lib}{}\section{Quantum\+Lib Namespace Reference}
+\label{namespace_quantum_lib}\index{Quantum\+Lib@{Quantum\+Lib}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_alarm_ack__t}{Alarm\+Ack\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_alarm_data__t}{Alarm\+Data\+\_\+t}}
+\item 
+class \mbox{\hyperlink{class_quantum_lib_1_1_a_p_i}{A\+PI}}
+\begin{DoxyCompactList}\small\item\em Defines the interface between the Client application and the Quantum S\+DK Library This class is exported from the library. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_custom_ranges__t}{Custom\+Ranges\+\_\+t}}
+\item 
+class \mbox{\hyperlink{class_quantum_lib_1_1_i_notify}{I\+Notify}}
+\begin{DoxyCompactList}\small\item\em Base class for notification messages received from the Radar.~\newline
+. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t}{Marpa\+Data\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_designate__t}{Marpa\+Designate\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_setup__t}{Marpa\+Setup\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_nav_data__t}{Nav\+Data\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_nav_data_item__t}{Nav\+Data\+Item\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_scanner_details__t}{Scanner\+Details\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_setting_data__t}{Setting\+Data\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t}{Spoke\+Data\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_timed_transmit__t}{Timed\+Transmit\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_timed_transmit_remaining__t}{Timed\+Transmit\+Remaining\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_zone__t}{Zone\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{struct_quantum_lib_1_1_zone_state__t}{Zone\+State\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777}{e\+Features\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777a3d8d18ce9a591eaeb49f51e14e730556}{e\+Feature\+Dual\+Range}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777a46f9c2738cb00b9d48620d8d116246bf}{e\+Feature48\+R\+PM}} = 2, 
+\mbox{\hyperlink{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777acac1e4045b680cc7357e8f7316b15d57}{e\+Feature\+Doppler}} = 3, 
+\mbox{\hyperlink{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777a8291e9c923f6be0701f9a02ba4e53341}{e\+Feature\+Auto\+Acquire}} = 4
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255c}{e\+Parameters\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255ca9a70eba6dd435a2752aa1a6c4a847433}{e\+Param\+Min\+Range}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255ca972ab541e58d91c2ff9f05dce09df6d3}{e\+Param\+Max\+Range}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255ca50d210a15dcfb433e2d1ca3adeda3a7f}{e\+Param\+Marpa\+Targets}} = 2
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54c}{e\+Settings\+\_\+t}} \{ \newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cab28c2f16bbf5e97f0be16fe9816a695b}{e\+Setting\+Undefined}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca979ebf5f13199739e12a44ae3a7d7596}{e\+Setting\+Radar\+Mode}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caf38ecce557924c1f5dc32d8c8157c552}{e\+Setting\+Interference\+Rejection}} = 2, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cade83d898b61d6af0511ae31eb023ab6b}{e\+Setting\+Bearing\+Alignment}} = 3, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caab7ab78364b884006412b502e7d09572}{e\+Setting\+Timed\+Transmit}} = 4, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca6fbcbee1bae338a4f45eb87c355be4fe}{e\+Setting\+Tx\+Frequency}} = 5, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca4c346eb86fb34b8c74bf39651f8948e9}{e\+Setting\+Guard\+Zone\+Sensitivity}} = 6, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca9b2212b5d2855a4c2ea7333997ff63f7}{e\+Setting\+Guard\+Zone1}} = 7, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca310cbcc138ac9d7731a0b9256989aa3c}{e\+Setting\+Guard\+Zone2}} = 8, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caa5baecb408949642582b8300529a57d6}{e\+Setting\+Guard\+Zone\+Enable}} = 9, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca2b2bfab6ea7e4e63923519c6a34c3e19}{e\+Setting\+Auto\+Accquire\+Zone1}} = 10, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca07c900683db032067542bd1bcbcdc418}{e\+Setting\+Auto\+Accquire\+Zone2}} = 11, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca494b3f9a3bd6a6cd26638f56ef5ca2f2}{e\+Setting\+Auto\+Acquire\+Mode}} = 12, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cac2aed9d73c5515b007216538f524dbc4}{e\+Setting\+Auto\+Acquire\+Zone\+Enable}} = 13, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca4ea9dd0ffc6b9f145c4111aa3bf1ff81}{e\+Setting\+Custom\+Ranges}} = 14, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca779bd9c4b46f923122621f00e0f8e751}{e\+Setting\+Range}} = 20, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca3a44dcc1f4965d1c2d0d7469e198ccc5}{e\+Setting\+Preset\+Mode}} = 21, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cac2b7c0f09c75a3de9a2780d3bae0296f}{e\+Setting\+Gain\+Mode}} = 22, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caff147e67867aac0fa88b8d1e2a849e66}{e\+Setting\+Gain\+Value}} = 23, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cafef9f6dac71f11bdb6b97750953d140b}{e\+Setting\+Colour\+Gain\+Mode}} = 24, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca26f275ce5b14409971b6085468c2d632}{e\+Setting\+Colour\+Gain\+Value}} = 25, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca593e70f6a28f2906edb5f75d295ec657}{e\+Setting\+Sea\+Mode}} = 26, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caeed49a40b0047ca122df916a7d190c69}{e\+Setting\+Sea\+Value}} = 27, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca0fcb9b4e8d9018ce53ee9f57221392b1}{e\+Setting\+Rain\+Mode}} = 28, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca5a5f9013f10d3d32dd69aa19a527ad23}{e\+Setting\+Rain\+Value}} = 29, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cae155e2cdb18bbf8e212235d18091e519}{e\+Setting\+Target\+Expansion}} = 30, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caa0386489e8bf5279351a8c77b8a039ab}{e\+Setting\+Sea\+Clutter\+Curve}} = 31, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca55d63bc25572f8f4212ffd0f04d33830}{e\+Setting\+Main\+Bang}} = 32, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca10e888ffc18101208220d6445208cd6d}{e\+Setting\+Doppler\+Mode}} = 40, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca5c53d22a83382134c9eb12009b61789f}{e\+Setting\+Doppler\+Active}} = 41, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cab4e5cf461eae89a7a1b49e675f4616d3}{e\+Setting\+Timed\+Transmit\+Remaining}} = 50, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cab8f789a743fcfbea80325dd7ccdfa613}{e\+Setting\+Nav\+Data}} = 60, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cae0da3a53a8abab02dfaeebb7f79f2840}{e\+Setting\+Marpa\+Setup}} = 61, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca6ebc12fe83f3f2c5c43089b20dfbaf56}{e\+Setting\+Marpa\+Designate}} = 62, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caca2370b77f4502b02958d503c68c1c41}{e\+Setting\+Marpa\+Clear}} = 63, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca66e51b6ee77469163792596584c4711b}{e\+Setting\+Alarm\+Ack}} = 64, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca7134e2efea21449d5207d20f28d21622}{e\+Setting\+Main\+Software\+Version}} = 70, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caaa55091dcc02da0a7339c777cec5afc1}{e\+Setting\+Psu\+Software\+Version}} = 71, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cadf0b0d89a53cef2a78f4f61b440966ca}{e\+Setting\+Fpga\+Software\+Version}} = 72, 
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca06f12cac94527bc852bdba146aba06d7}{e\+Setting\+Wi\+Fi\+Software\+Version}} = 73, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caa5dd56d85741141357e39c6f87a167a2}{e\+Setting\+W3\+Software\+Version}} = 74
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619}{e\+Radar\+Mode\+\_\+t}} \{ \newline
+\mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a8576396d8951c15c888e7224cc1e0d8d}{e\+Radar\+Mode\+Standby}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619ac212b395ef161884f73c720cb3946512}{e\+Radar\+Mode\+Transmitting}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a65227b135f03fa8c529db70b768e3f05}{e\+Radar\+Mode\+Power\+Down}} = 3, 
+\mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a6c535cdedaf4a745e2de5f9b0a93dd8d}{e\+Radar\+Mode\+Timed\+Tx}} = 4, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a28bff97daf97c2e6a4ae0c243c5f5269}{e\+Radar\+Mode\+Sleep}} = 5, 
+\mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619abe82a05ef5b667a18b1c192816064a24}{e\+Radar\+Mode\+Stalled}} = 7, 
+\mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619ab830f34cee803acb435608f42a670a70}{e\+Radar\+Mode\+Self\+Test\+Failed}} = 10, 
+\mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619ade1de35fb60c2c3dea8f78060807b176}{e\+Radar\+Mode\+Invalid}} = -\/1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350}{e\+Interference\+Rejection\+Mode\+\_\+t}} \{ \newline
+\mbox{\hyperlink{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350abae35331159a68d6f3f9993705ddc20c}{e\+Interference\+Rejection\+Mode\+Off}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a083e4c8e07b3e2bf2ad6fcc7c8c09786}{e\+Interference\+Rejection\+Mode1}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a6fbf991a08a6065140cbd6beef97eb35}{e\+Interference\+Rejection\+Mode2}} = 2, 
+\mbox{\hyperlink{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a8ab5aa042ecb23045333bd5cc91cb644}{e\+Interference\+Rejection\+Mode3}} = 3, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350ad8f6bdd21842a6b69930e155689c9b0f}{e\+Interference\+Rejection\+Mode4}} = 4, 
+\mbox{\hyperlink{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350aa39152756a5a97c67f4c822ec5024aa8}{e\+Interference\+Rejection\+Mode5}} = 5, 
+\mbox{\hyperlink{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a22ea25eb4fcd5634fac1d815e6ec9f54}{e\+Interference\+Rejection\+Mode\+Invalid}} = -\/1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019}{e\+Transmit\+Frequency\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019ad88ebc5c380e9dfd60c4fda4141ff095}{e\+Transmit\+Frequency\+Nominal}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019af585e32aa9a7ffd588f273ae0f208d0c}{e\+Transmit\+Frequency\+Low}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019ad24b42c40911a062918243143d796d57}{e\+Transmit\+Frequency\+High}} = 2
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9c}{e\+Channel\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9ca138030e22ba51e5117deb34019ead09e}{e\+Channel\+Default}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9ca045a3a8118b93b463f1767ed36d2a6e3}{e\+Channel\+Second}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9ca3059653ffeabf1b10c1262de7f6324e8}{e\+Channel\+Independent}} = 0xff
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8}{e\+Preset\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8a1fa316ab359d436967e65595b7d42491}{e\+Preset\+Harbour}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8ac31a0d4112946bb5f637e2f512f1c554}{e\+Preset\+Coastal}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8a6603d2bc6ab4662c264d02614beef2af}{e\+Preset\+Offshore}} = 2, 
+\mbox{\hyperlink{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8aafac12e1abcbbf293b703e013bbb0752}{e\+Preset\+Weather}} = 3
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13}{e\+Gain\+Mode\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13a9524dcce29cd5dafe4ff72a82fed92c0}{e\+Gain\+Mode\+Manual}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13a34ca56b0fd5855b109089ebaaccfe50a}{e\+Gain\+Mode\+Auto}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65}{e\+Colour\+Gain\+Mode\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65adb01dba5bfcbd360b1b300c68ed69a19}{e\+Colour\+Gain\+Mode\+Manual}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65a7901bfdc2703d0960d3ce3dd04e51474}{e\+Colour\+Gain\+Mode\+Auto}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8d}{e\+Sea\+Mode\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8da0585658ded88f8f99b0f1ced1edcb4b5}{e\+Sea\+Mode\+Manual}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8da4a8466cfd9643d6fa118b7819f06a34f}{e\+Sea\+Mode\+Auto}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245}{e\+Rain\+Mode\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245a23d55172337289a683d16dd7c790132f}{e\+Rain\+Mode\+Off}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245a23fd258b5a79942f441435c2dbe5543d}{e\+Rain\+Mode\+Manual}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fb}{e\+Target\+Expansion\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fba08ca29753d9913ebb2d4affbd443984a}{e\+Target\+Expansion\+Off}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fba642e93b8e62df601860c5ea46328c0cf}{e\+Target\+Expansion\+On}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06}{e\+Sea\+Curve\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06a462a4673778fa74ce2715e58a1ab56d7}{e\+Sea\+Curve\+\_\+\+R4}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06ab85d01c600b49ab59974c0c47a7ae6ab}{e\+Sea\+Curve\+\_\+\+R5\+\_\+5}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798}{e\+Main\+Bang\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798a67acba6e337cfc4e540794b1652dde8c}{e\+Main\+Bang\+Off}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798aebdc6538b9692b96cb4838b38c2681f9}{e\+Main\+Bang\+On}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5}{e\+Doppler\+Mode\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5a1405e885752fc9e27e222762e559a414}{e\+Doppler\+Off}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5a0d269d3a17442468bad3da1aa57319da}{e\+Doppler\+On}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8}{e\+Auto\+Acquire\+Mode\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8a44c95a0755a6e2b1788ad86f287502e4}{e\+Auto\+Acquire\+Off}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8a3103d96d43f0c8a4c47e6e1a08b96ccd}{e\+Auto\+Acquire\+Zone}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8ae1faefe7c9cc6c07166c537343787946}{e\+Auto\+Acquire\+Doppler}} = 2
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4}{e\+Doppler\+Active\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4a4cc4676b3d320f718b7eae3d5435a31b}{e\+Doppler\+Suspended}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4a553ff3bae0c80ed85852ad245ada5c2c}{e\+Doppler\+Active}} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9e}{e\+Target\+State\+\_\+t}} \{ \mbox{\hyperlink{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea3e3b3edd9ca63eb21b217eca663634af}{e\+Acquiring}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea01453dc7d555f656169740b58f76042c}{e\+Safe}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea46848e55b4d0c8269a92437d37ec1eae}{e\+Dangerous}} = 2, 
+\mbox{\hyperlink{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea5ccf5adddd7a9bbf0724017ccf7123e7}{e\+Lost}} = 3
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750}{e\+Alarm\+Type\+\_\+t}} \{ \newline
+\mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750ae0ccdd9d5a8aadb85fdb7f99371852ef}{e\+Alarm\+Type\+All}} = 0x\+F\+F\+F\+F\+F\+F\+FF, 
+\mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a3645d876a66d7969b7559bd2936e76c3}{e\+Alarm\+Type\+Guard\+Zone\+Target\+Entering}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a65529e7fabe5f17628a76b64174170ee}{e\+Alarm\+Type\+Marpa\+Dangerous\+Target}} = 1, 
+\mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a315e7065f65c6e85403707e7c71c7dba}{e\+Alarm\+Type\+Marpa\+Lost\+Target}} = 2, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a1438c2e9535d3d64b25b158b653be27d}{e\+Alarm\+Type\+Auto\+Acquire\+List\+Full}} = 3, 
+\mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a0b9e8254db6db0608400425d2977590a}{e\+Alarm\+Type\+Undefined}} = 0x\+F\+F\+F\+F\+F\+F\+FE
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{e\+Error\+Code\+\_\+t}} \{ \newline
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a54d1bac7271d757dfc4857200d249dd9}{e\+No\+Error}} = 0, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47ae8007f850c4270b48a6140f02bdeaadb}{e\+Error\+General\+Failure}} = -\/1, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47ab02c12b382194abad83eecb46e950a7d}{e\+Error\+Out\+Of\+Memory}} = -\/2, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47af6471d43c2f6b139ae91af42fe1bf712}{e\+Error\+Invalid\+Scanner\+Index}} = -\/10, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a049129932dfa07734b2fcd1965e8f445}{e\+Error\+Invalid\+Serial\+Number}} = -\/11, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a350a80bde2610ecc019c060efa200126}{e\+Error\+Feature\+Not\+Supported}} = -\/20, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a4650694bbd81ac9e5ab03f3008d99904}{e\+Error\+Invalid\+Value}} = -\/21, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a2d4f51d4a68c819f848b1309f5ec15f1}{e\+Error\+Invalid\+Data\+Size}} = -\/22, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a58f72ac7e0288aa2aae531d233d868c6}{e\+Error\+Invalid\+Setting}} = -\/23, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a80bfa4c87904021422f104c95e840ee2}{e\+Error\+Invalid\+Number\+Of\+Parameters}} = -\/24, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a993b69b6617a63b6047e5992013d8bb3}{e\+Error\+Ethernet\+Tx\+Message\+Length}} = -\/30, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47aa2c8effacbc9590663a2a55ecba0bacd}{e\+Error\+Ethernet\+Interface\+Failure}} = -\/31, 
+\newline
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a313b10d04872404cd5e34822347bc505}{e\+Error\+Ethernet\+Failed\+To\+Get\+Ipaddress}} = -\/32, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a78c7f8936e6ff79964bdd8dc6436495c}{e\+Error\+Ethernet\+Failed\+To\+Create\+Sys\+Sockets}} = -\/33, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a3b6d55fb6f508298c0415b2dcc423448}{e\+Error\+Invalid\+Notify\+Function}} = -\/100, 
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a812acf50ff173daf0acb7187dc85fa14}{e\+Error\+Notify\+Already\+Registered}} = -\/101
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyCopyright}{Copyright}
+Copyright (C) 2018, 2019 Raymarine -\/ All Rights Reserved 
+
+You may use, distribute and modify this code under the 
+
+terms of the Raymarine Radar S\+DK License Agreement. 
+
+You should have received a copy of the Raymarine Radar S\+DK License Agreement with 
+
+this file. If not, please contact Raymarine. 
+\end{DoxyCopyright}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750}\label{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Alarm\+Type\+\_\+t@{e\+Alarm\+Type\+\_\+t}}
+\index{e\+Alarm\+Type\+\_\+t@{e\+Alarm\+Type\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Alarm\+Type\+\_\+t}{eAlarmType\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750}{Quantum\+Lib\+::e\+Alarm\+Type\+\_\+t}}}
+
+Defines the source of the Alarm e.\+g Guard Zone, Marpa Target.~\newline
+This type is used for notification of alarms and acknowledgment of alarms. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_alarm_data__t}{Alarm\+Data\+\_\+t}} 
+
+\mbox{\hyperlink{struct_quantum_lib_1_1_alarm_ack__t}{Alarm\+Ack\+\_\+t}} 
+
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca66e51b6ee77469163792596584c4711b}{e\+Setting\+Alarm\+Ack}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Alarm\+Type\+All@{e\+Alarm\+Type\+All}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Alarm\+Type\+All@{e\+Alarm\+Type\+All}}}\mbox{\Hypertarget{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750ae0ccdd9d5a8aadb85fdb7f99371852ef}\label{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750ae0ccdd9d5a8aadb85fdb7f99371852ef}} 
+e\+Alarm\+Type\+All&Used to Acknowledge all alarm types (0x\+F\+F\+F\+F\+F\+F\+FF) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Alarm\+Type\+Guard\+Zone\+Target\+Entering@{e\+Alarm\+Type\+Guard\+Zone\+Target\+Entering}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Alarm\+Type\+Guard\+Zone\+Target\+Entering@{e\+Alarm\+Type\+Guard\+Zone\+Target\+Entering}}}\mbox{\Hypertarget{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a3645d876a66d7969b7559bd2936e76c3}\label{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a3645d876a66d7969b7559bd2936e76c3}} 
+e\+Alarm\+Type\+Guard\+Zone\+Target\+Entering&Target Entering Guard Zone (0) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Alarm\+Type\+Marpa\+Dangerous\+Target@{e\+Alarm\+Type\+Marpa\+Dangerous\+Target}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Alarm\+Type\+Marpa\+Dangerous\+Target@{e\+Alarm\+Type\+Marpa\+Dangerous\+Target}}}\mbox{\Hypertarget{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a65529e7fabe5f17628a76b64174170ee}\label{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a65529e7fabe5f17628a76b64174170ee}} 
+e\+Alarm\+Type\+Marpa\+Dangerous\+Target&Dangerous Marpa Target (1) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Alarm\+Type\+Marpa\+Lost\+Target@{e\+Alarm\+Type\+Marpa\+Lost\+Target}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Alarm\+Type\+Marpa\+Lost\+Target@{e\+Alarm\+Type\+Marpa\+Lost\+Target}}}\mbox{\Hypertarget{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a315e7065f65c6e85403707e7c71c7dba}\label{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a315e7065f65c6e85403707e7c71c7dba}} 
+e\+Alarm\+Type\+Marpa\+Lost\+Target&Lost Marpa Target (2) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Alarm\+Type\+Auto\+Acquire\+List\+Full@{e\+Alarm\+Type\+Auto\+Acquire\+List\+Full}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Alarm\+Type\+Auto\+Acquire\+List\+Full@{e\+Alarm\+Type\+Auto\+Acquire\+List\+Full}}}\mbox{\Hypertarget{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a1438c2e9535d3d64b25b158b653be27d}\label{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a1438c2e9535d3d64b25b158b653be27d}} 
+e\+Alarm\+Type\+Auto\+Acquire\+List\+Full&Attempting to Auto Acquire Target when list is full (3) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Alarm\+Type\+Undefined@{e\+Alarm\+Type\+Undefined}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Alarm\+Type\+Undefined@{e\+Alarm\+Type\+Undefined}}}\mbox{\Hypertarget{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a0b9e8254db6db0608400425d2977590a}\label{namespace_quantum_lib_a63dd10ad28888fcad99c7b8c5f155750a0b9e8254db6db0608400425d2977590a}} 
+e\+Alarm\+Type\+Undefined&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8}\label{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Auto\+Acquire\+Mode\+\_\+t@{e\+Auto\+Acquire\+Mode\+\_\+t}}
+\index{e\+Auto\+Acquire\+Mode\+\_\+t@{e\+Auto\+Acquire\+Mode\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Auto\+Acquire\+Mode\+\_\+t}{eAutoAcquireMode\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8}{Quantum\+Lib\+::e\+Auto\+Acquire\+Mode\+\_\+t}}}
+
+Specify Auto Acquire Mode (This feature is currently not supported) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca494b3f9a3bd6a6cd26638f56ef5ca2f2}{e\+Setting\+Auto\+Acquire\+Mode}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Auto\+Acquire\+Off@{e\+Auto\+Acquire\+Off}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Auto\+Acquire\+Off@{e\+Auto\+Acquire\+Off}}}\mbox{\Hypertarget{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8a44c95a0755a6e2b1788ad86f287502e4}\label{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8a44c95a0755a6e2b1788ad86f287502e4}} 
+e\+Auto\+Acquire\+Off&Auto Acquire is turned off. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Auto\+Acquire\+Zone@{e\+Auto\+Acquire\+Zone}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Auto\+Acquire\+Zone@{e\+Auto\+Acquire\+Zone}}}\mbox{\Hypertarget{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8a3103d96d43f0c8a4c47e6e1a08b96ccd}\label{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8a3103d96d43f0c8a4c47e6e1a08b96ccd}} 
+e\+Auto\+Acquire\+Zone&Auto Acquire Targets within the specified auto acquire zones (not currently supported) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Auto\+Acquire\+Doppler@{e\+Auto\+Acquire\+Doppler}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Auto\+Acquire\+Doppler@{e\+Auto\+Acquire\+Doppler}}}\mbox{\Hypertarget{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8ae1faefe7c9cc6c07166c537343787946}\label{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8ae1faefe7c9cc6c07166c537343787946}} 
+e\+Auto\+Acquire\+Doppler&Auto Acquire Targets that have approaching doppler speed (not currently supported) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9c}\label{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9c}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Channel\+\_\+t@{e\+Channel\+\_\+t}}
+\index{e\+Channel\+\_\+t@{e\+Channel\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Channel\+\_\+t}{eChannel\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9c}{Quantum\+Lib\+::e\+Channel\+\_\+t}}}
+
+The channel is used to select which data stream a parameter should be applied to when Dual Range data is available.~\newline
+If Dual Range data is not available the channel should be set to e\+Channel\+Default.~\newline
+If a parameter applies to all channels e\+Channel\+Independent should be selected.~\newline
+ \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Channel\+Default@{e\+Channel\+Default}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Channel\+Default@{e\+Channel\+Default}}}\mbox{\Hypertarget{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9ca138030e22ba51e5117deb34019ead09e}\label{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9ca138030e22ba51e5117deb34019ead09e}} 
+e\+Channel\+Default&Default Channel, Channel 0. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Channel\+Second@{e\+Channel\+Second}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Channel\+Second@{e\+Channel\+Second}}}\mbox{\Hypertarget{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9ca045a3a8118b93b463f1767ed36d2a6e3}\label{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9ca045a3a8118b93b463f1767ed36d2a6e3}} 
+e\+Channel\+Second&Second Channel, Channel 1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Channel\+Independent@{e\+Channel\+Independent}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Channel\+Independent@{e\+Channel\+Independent}}}\mbox{\Hypertarget{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9ca3059653ffeabf1b10c1262de7f6324e8}\label{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9ca3059653ffeabf1b10c1262de7f6324e8}} 
+e\+Channel\+Independent&Used if parameter is applied to whole scanner, channel independent. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65}\label{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Colour\+Gain\+Mode\+\_\+t@{e\+Colour\+Gain\+Mode\+\_\+t}}
+\index{e\+Colour\+Gain\+Mode\+\_\+t@{e\+Colour\+Gain\+Mode\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Colour\+Gain\+Mode\+\_\+t}{eColourGainMode\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65}{Quantum\+Lib\+::e\+Colour\+Gain\+Mode\+\_\+t}}}
+
+Set Colour Gain control to Automatic or Manual Setting. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cafef9f6dac71f11bdb6b97750953d140b}{e\+Setting\+Colour\+Gain\+Mode}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Colour\+Gain\+Mode\+Manual@{e\+Colour\+Gain\+Mode\+Manual}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Colour\+Gain\+Mode\+Manual@{e\+Colour\+Gain\+Mode\+Manual}}}\mbox{\Hypertarget{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65adb01dba5bfcbd360b1b300c68ed69a19}\label{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65adb01dba5bfcbd360b1b300c68ed69a19}} 
+e\+Colour\+Gain\+Mode\+Manual&Manual Control of Colour Gain 0 -\/100\%. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Colour\+Gain\+Mode\+Auto@{e\+Colour\+Gain\+Mode\+Auto}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Colour\+Gain\+Mode\+Auto@{e\+Colour\+Gain\+Mode\+Auto}}}\mbox{\Hypertarget{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65a7901bfdc2703d0960d3ce3dd04e51474}\label{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65a7901bfdc2703d0960d3ce3dd04e51474}} 
+e\+Colour\+Gain\+Mode\+Auto&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4}\label{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Doppler\+Active\+\_\+t@{e\+Doppler\+Active\+\_\+t}}
+\index{e\+Doppler\+Active\+\_\+t@{e\+Doppler\+Active\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Doppler\+Active\+\_\+t}{eDopplerActive\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4}{Quantum\+Lib\+::e\+Doppler\+Active\+\_\+t}}}
+
+Notification message to identify if Doppler processing is active.~\newline
+Doppler Mode can be suspended if no S\+OG information is available in the scanner or if the range is set to 12nm or higher (8nm or higher, with Target Expansion ON or in Weather mode). \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca5c53d22a83382134c9eb12009b61789f}{e\+Setting\+Doppler\+Active}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Doppler\+Suspended@{e\+Doppler\+Suspended}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Doppler\+Suspended@{e\+Doppler\+Suspended}}}\mbox{\Hypertarget{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4a4cc4676b3d320f718b7eae3d5435a31b}\label{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4a4cc4676b3d320f718b7eae3d5435a31b}} 
+e\+Doppler\+Suspended&Doppler mode has been suspend. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Doppler\+Active@{e\+Doppler\+Active}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Doppler\+Active@{e\+Doppler\+Active}}}\mbox{\Hypertarget{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4a553ff3bae0c80ed85852ad245ada5c2c}\label{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4a553ff3bae0c80ed85852ad245ada5c2c}} 
+e\+Doppler\+Active&Doppler mode is enabled and doppler approaching/receeding information is provided in spoke data. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5}\label{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Doppler\+Mode\+\_\+t@{e\+Doppler\+Mode\+\_\+t}}
+\index{e\+Doppler\+Mode\+\_\+t@{e\+Doppler\+Mode\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Doppler\+Mode\+\_\+t}{eDopplerMode\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5}{Quantum\+Lib\+::e\+Doppler\+Mode\+\_\+t}}}
+
+Turn Doppler processing ON or O\+FF.~\newline
+When Doppler processing is ON, spoke data contains special values to identify approacing or receeding targets.~\newline
+A value of 255 in the spoke data indicates that this sample is an approaching target.~\newline
+A value of 254 in the spoke data indicates that this sample is an receeding target. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca10e888ffc18101208220d6445208cd6d}{e\+Setting\+Doppler\+Mode}} 
+
+\mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t}{Spoke\+Data\+\_\+t}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Doppler\+Off@{e\+Doppler\+Off}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Doppler\+Off@{e\+Doppler\+Off}}}\mbox{\Hypertarget{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5a1405e885752fc9e27e222762e559a414}\label{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5a1405e885752fc9e27e222762e559a414}} 
+e\+Doppler\+Off&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Doppler\+On@{e\+Doppler\+On}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Doppler\+On@{e\+Doppler\+On}}}\mbox{\Hypertarget{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5a0d269d3a17442468bad3da1aa57319da}\label{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5a0d269d3a17442468bad3da1aa57319da}} 
+e\+Doppler\+On&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Code\+\_\+t@{e\+Error\+Code\+\_\+t}}
+\index{e\+Error\+Code\+\_\+t@{e\+Error\+Code\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Error\+Code\+\_\+t}{eErrorCode\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{Quantum\+Lib\+::e\+Error\+Code\+\_\+t}}}
+
+Return codes from Quantum Library e\+No\+Error indicates success neagative values describe the error \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+No\+Error@{e\+No\+Error}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+No\+Error@{e\+No\+Error}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a54d1bac7271d757dfc4857200d249dd9}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a54d1bac7271d757dfc4857200d249dd9}} 
+e\+No\+Error&0 -\/ No Error, success \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+General\+Failure@{e\+Error\+General\+Failure}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+General\+Failure@{e\+Error\+General\+Failure}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47ae8007f850c4270b48a6140f02bdeaadb}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47ae8007f850c4270b48a6140f02bdeaadb}} 
+e\+Error\+General\+Failure&-\/1 OS Failure, Failed to create Mutex, Thread, Event or Semaphore \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Out\+Of\+Memory@{e\+Error\+Out\+Of\+Memory}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Out\+Of\+Memory@{e\+Error\+Out\+Of\+Memory}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47ab02c12b382194abad83eecb46e950a7d}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47ab02c12b382194abad83eecb46e950a7d}} 
+e\+Error\+Out\+Of\+Memory&-\/2 Out of memory, failed to instantiate class \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Invalid\+Scanner\+Index@{e\+Error\+Invalid\+Scanner\+Index}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Invalid\+Scanner\+Index@{e\+Error\+Invalid\+Scanner\+Index}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47af6471d43c2f6b139ae91af42fe1bf712}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47af6471d43c2f6b139ae91af42fe1bf712}} 
+e\+Error\+Invalid\+Scanner\+Index&-\/10 Invalid Scanner Index supplied. Can\textquotesingle{}t find the scanner is current list of scanners \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Invalid\+Serial\+Number@{e\+Error\+Invalid\+Serial\+Number}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Invalid\+Serial\+Number@{e\+Error\+Invalid\+Serial\+Number}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a049129932dfa07734b2fcd1965e8f445}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a049129932dfa07734b2fcd1965e8f445}} 
+e\+Error\+Invalid\+Serial\+Number&-\/11 Invalid Serial Number supplied. Can\textquotesingle{}t find the scanner is current list of scanners \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Feature\+Not\+Supported@{e\+Error\+Feature\+Not\+Supported}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Feature\+Not\+Supported@{e\+Error\+Feature\+Not\+Supported}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a350a80bde2610ecc019c060efa200126}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a350a80bde2610ecc019c060efa200126}} 
+e\+Error\+Feature\+Not\+Supported&-\/20 Feature requested, in command to scanner, is not avialble in this scanner. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Invalid\+Value@{e\+Error\+Invalid\+Value}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Invalid\+Value@{e\+Error\+Invalid\+Value}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a4650694bbd81ac9e5ab03f3008d99904}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a4650694bbd81ac9e5ab03f3008d99904}} 
+e\+Error\+Invalid\+Value&-\/21 Invalid value supplied in command to scanner \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Invalid\+Data\+Size@{e\+Error\+Invalid\+Data\+Size}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Invalid\+Data\+Size@{e\+Error\+Invalid\+Data\+Size}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a2d4f51d4a68c819f848b1309f5ec15f1}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a2d4f51d4a68c819f848b1309f5ec15f1}} 
+e\+Error\+Invalid\+Data\+Size&-\/22 Invalid size of data supplied in command to scanner \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Invalid\+Setting@{e\+Error\+Invalid\+Setting}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Invalid\+Setting@{e\+Error\+Invalid\+Setting}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a58f72ac7e0288aa2aae531d233d868c6}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a58f72ac7e0288aa2aae531d233d868c6}} 
+e\+Error\+Invalid\+Setting&-\/23 Invalid setting supplied in command to scanner \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Invalid\+Number\+Of\+Parameters@{e\+Error\+Invalid\+Number\+Of\+Parameters}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Invalid\+Number\+Of\+Parameters@{e\+Error\+Invalid\+Number\+Of\+Parameters}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a80bfa4c87904021422f104c95e840ee2}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a80bfa4c87904021422f104c95e840ee2}} 
+e\+Error\+Invalid\+Number\+Of\+Parameters&-\/24 Invalid Number of Parameters supplied in scanner command \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Ethernet\+Tx\+Message\+Length@{e\+Error\+Ethernet\+Tx\+Message\+Length}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Ethernet\+Tx\+Message\+Length@{e\+Error\+Ethernet\+Tx\+Message\+Length}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a993b69b6617a63b6047e5992013d8bb3}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a993b69b6617a63b6047e5992013d8bb3}} 
+e\+Error\+Ethernet\+Tx\+Message\+Length&-\/30 Message length is greater than ethernet packet size \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Ethernet\+Interface\+Failure@{e\+Error\+Ethernet\+Interface\+Failure}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Ethernet\+Interface\+Failure@{e\+Error\+Ethernet\+Interface\+Failure}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47aa2c8effacbc9590663a2a55ecba0bacd}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47aa2c8effacbc9590663a2a55ecba0bacd}} 
+e\+Error\+Ethernet\+Interface\+Failure&-\/31 General failure of ethernet interface \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Ethernet\+Failed\+To\+Get\+Ipaddress@{e\+Error\+Ethernet\+Failed\+To\+Get\+Ipaddress}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Ethernet\+Failed\+To\+Get\+Ipaddress@{e\+Error\+Ethernet\+Failed\+To\+Get\+Ipaddress}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a313b10d04872404cd5e34822347bc505}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a313b10d04872404cd5e34822347bc505}} 
+e\+Error\+Ethernet\+Failed\+To\+Get\+Ipaddress&-\/32 Failed to get Ip address, port may not be configured for 10.\+x.\+x.\+x network \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Ethernet\+Failed\+To\+Create\+Sys\+Sockets@{e\+Error\+Ethernet\+Failed\+To\+Create\+Sys\+Sockets}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Ethernet\+Failed\+To\+Create\+Sys\+Sockets@{e\+Error\+Ethernet\+Failed\+To\+Create\+Sys\+Sockets}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a78c7f8936e6ff79964bdd8dc6436495c}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a78c7f8936e6ff79964bdd8dc6436495c}} 
+e\+Error\+Ethernet\+Failed\+To\+Create\+Sys\+Sockets&-\/33 Failed to create system sockets \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Invalid\+Notify\+Function@{e\+Error\+Invalid\+Notify\+Function}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Invalid\+Notify\+Function@{e\+Error\+Invalid\+Notify\+Function}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a3b6d55fb6f508298c0415b2dcc423448}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a3b6d55fb6f508298c0415b2dcc423448}} 
+e\+Error\+Invalid\+Notify\+Function&-\/100 supplied notify handler is N\+U\+LL \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Error\+Notify\+Already\+Registered@{e\+Error\+Notify\+Already\+Registered}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Error\+Notify\+Already\+Registered@{e\+Error\+Notify\+Already\+Registered}}}\mbox{\Hypertarget{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a812acf50ff173daf0acb7187dc85fa14}\label{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47a812acf50ff173daf0acb7187dc85fa14}} 
+e\+Error\+Notify\+Already\+Registered&-\/101 Notify handler already installed \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777}\label{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Features\+\_\+t@{e\+Features\+\_\+t}}
+\index{e\+Features\+\_\+t@{e\+Features\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Features\+\_\+t}{eFeatures\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777}{Quantum\+Lib\+::e\+Features\+\_\+t}}}
+
+Feature flags indicate functions that are supported by the scanner.~\newline
+Notification messages will be sent to Feature\+Changed callback function. \begin{DoxySeeAlso}{See also}
+Feature\+Changed 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Feature\+Dual\+Range@{e\+Feature\+Dual\+Range}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Feature\+Dual\+Range@{e\+Feature\+Dual\+Range}}}\mbox{\Hypertarget{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777a3d8d18ce9a591eaeb49f51e14e730556}\label{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777a3d8d18ce9a591eaeb49f51e14e730556}} 
+e\+Feature\+Dual\+Range&Dual Range. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Feature48\+R\+PM@{e\+Feature48\+R\+PM}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Feature48\+R\+PM@{e\+Feature48\+R\+PM}}}\mbox{\Hypertarget{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777a46f9c2738cb00b9d48620d8d116246bf}\label{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777a46f9c2738cb00b9d48620d8d116246bf}} 
+e\+Feature48\+R\+PM&48\+R\+PM \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Feature\+Doppler@{e\+Feature\+Doppler}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Feature\+Doppler@{e\+Feature\+Doppler}}}\mbox{\Hypertarget{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777acac1e4045b680cc7357e8f7316b15d57}\label{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777acac1e4045b680cc7357e8f7316b15d57}} 
+e\+Feature\+Doppler&Doppler. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Feature\+Auto\+Acquire@{e\+Feature\+Auto\+Acquire}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Feature\+Auto\+Acquire@{e\+Feature\+Auto\+Acquire}}}\mbox{\Hypertarget{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777a8291e9c923f6be0701f9a02ba4e53341}\label{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777a8291e9c923f6be0701f9a02ba4e53341}} 
+e\+Feature\+Auto\+Acquire&Auto Target Acquisition. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13}\label{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Gain\+Mode\+\_\+t@{e\+Gain\+Mode\+\_\+t}}
+\index{e\+Gain\+Mode\+\_\+t@{e\+Gain\+Mode\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Gain\+Mode\+\_\+t}{eGainMode\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13}{Quantum\+Lib\+::e\+Gain\+Mode\+\_\+t}}}
+
+Set Gain control to Automatic or Manual Setting. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cac2b7c0f09c75a3de9a2780d3bae0296f}{e\+Setting\+Gain\+Mode}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Gain\+Mode\+Manual@{e\+Gain\+Mode\+Manual}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Gain\+Mode\+Manual@{e\+Gain\+Mode\+Manual}}}\mbox{\Hypertarget{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13a9524dcce29cd5dafe4ff72a82fed92c0}\label{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13a9524dcce29cd5dafe4ff72a82fed92c0}} 
+e\+Gain\+Mode\+Manual&Manual Control of Gain 0 -\/100\%. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Gain\+Mode\+Auto@{e\+Gain\+Mode\+Auto}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Gain\+Mode\+Auto@{e\+Gain\+Mode\+Auto}}}\mbox{\Hypertarget{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13a34ca56b0fd5855b109089ebaaccfe50a}\label{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13a34ca56b0fd5855b109089ebaaccfe50a}} 
+e\+Gain\+Mode\+Auto&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350}\label{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Interference\+Rejection\+Mode\+\_\+t@{e\+Interference\+Rejection\+Mode\+\_\+t}}
+\index{e\+Interference\+Rejection\+Mode\+\_\+t@{e\+Interference\+Rejection\+Mode\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Interference\+Rejection\+Mode\+\_\+t}{eInterferenceRejectionMode\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350}{Quantum\+Lib\+::e\+Interference\+Rejection\+Mode\+\_\+t}}}
+
+Level of Intereference Rejection to be applied.~\newline
+Default level is 3. Deafult level for weather mode is 1. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caf38ecce557924c1f5dc32d8c8157c552}{e\+Setting\+Interference\+Rejection}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Interference\+Rejection\+Mode\+Off@{e\+Interference\+Rejection\+Mode\+Off}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Interference\+Rejection\+Mode\+Off@{e\+Interference\+Rejection\+Mode\+Off}}}\mbox{\Hypertarget{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350abae35331159a68d6f3f9993705ddc20c}\label{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350abae35331159a68d6f3f9993705ddc20c}} 
+e\+Interference\+Rejection\+Mode\+Off&Inetrference Rejection is turned O\+FF. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Interference\+Rejection\+Mode1@{e\+Interference\+Rejection\+Mode1}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Interference\+Rejection\+Mode1@{e\+Interference\+Rejection\+Mode1}}}\mbox{\Hypertarget{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a083e4c8e07b3e2bf2ad6fcc7c8c09786}\label{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a083e4c8e07b3e2bf2ad6fcc7c8c09786}} 
+e\+Interference\+Rejection\+Mode1&Lowest level of Interference Rejection. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Interference\+Rejection\+Mode2@{e\+Interference\+Rejection\+Mode2}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Interference\+Rejection\+Mode2@{e\+Interference\+Rejection\+Mode2}}}\mbox{\Hypertarget{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a6fbf991a08a6065140cbd6beef97eb35}\label{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a6fbf991a08a6065140cbd6beef97eb35}} 
+e\+Interference\+Rejection\+Mode2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Interference\+Rejection\+Mode3@{e\+Interference\+Rejection\+Mode3}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Interference\+Rejection\+Mode3@{e\+Interference\+Rejection\+Mode3}}}\mbox{\Hypertarget{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a8ab5aa042ecb23045333bd5cc91cb644}\label{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a8ab5aa042ecb23045333bd5cc91cb644}} 
+e\+Interference\+Rejection\+Mode3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Interference\+Rejection\+Mode4@{e\+Interference\+Rejection\+Mode4}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Interference\+Rejection\+Mode4@{e\+Interference\+Rejection\+Mode4}}}\mbox{\Hypertarget{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350ad8f6bdd21842a6b69930e155689c9b0f}\label{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350ad8f6bdd21842a6b69930e155689c9b0f}} 
+e\+Interference\+Rejection\+Mode4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Interference\+Rejection\+Mode5@{e\+Interference\+Rejection\+Mode5}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Interference\+Rejection\+Mode5@{e\+Interference\+Rejection\+Mode5}}}\mbox{\Hypertarget{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350aa39152756a5a97c67f4c822ec5024aa8}\label{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350aa39152756a5a97c67f4c822ec5024aa8}} 
+e\+Interference\+Rejection\+Mode5&Highest level of Interference Rejection. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Interference\+Rejection\+Mode\+Invalid@{e\+Interference\+Rejection\+Mode\+Invalid}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Interference\+Rejection\+Mode\+Invalid@{e\+Interference\+Rejection\+Mode\+Invalid}}}\mbox{\Hypertarget{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a22ea25eb4fcd5634fac1d815e6ec9f54}\label{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350a22ea25eb4fcd5634fac1d815e6ec9f54}} 
+e\+Interference\+Rejection\+Mode\+Invalid&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798}\label{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Main\+Bang\+\_\+t@{e\+Main\+Bang\+\_\+t}}
+\index{e\+Main\+Bang\+\_\+t@{e\+Main\+Bang\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Main\+Bang\+\_\+t}{eMainBang\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798}{Quantum\+Lib\+::e\+Main\+Bang\+\_\+t}}}
+
+Main Bang Suppression is turned on by default \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Main\+Bang\+Off@{e\+Main\+Bang\+Off}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Main\+Bang\+Off@{e\+Main\+Bang\+Off}}}\mbox{\Hypertarget{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798a67acba6e337cfc4e540794b1652dde8c}\label{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798a67acba6e337cfc4e540794b1652dde8c}} 
+e\+Main\+Bang\+Off&Main Bang Suppression O\+FF. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Main\+Bang\+On@{e\+Main\+Bang\+On}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Main\+Bang\+On@{e\+Main\+Bang\+On}}}\mbox{\Hypertarget{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798aebdc6538b9692b96cb4838b38c2681f9}\label{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798aebdc6538b9692b96cb4838b38c2681f9}} 
+e\+Main\+Bang\+On&Main Bang Suppression ON. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255c}\label{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255c}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Parameters\+\_\+t@{e\+Parameters\+\_\+t}}
+\index{e\+Parameters\+\_\+t@{e\+Parameters\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Parameters\+\_\+t}{eParameters\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255c}{Quantum\+Lib\+::e\+Parameters\+\_\+t}}}
+
+Parameter settings to indicate the limits of functionality in the scanner.~\newline
+Notification messages will be sent to the Parameter\+Changed callback function. \begin{DoxySeeAlso}{See also}
+Parameter\+Changed 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Param\+Min\+Range@{e\+Param\+Min\+Range}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Param\+Min\+Range@{e\+Param\+Min\+Range}}}\mbox{\Hypertarget{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255ca9a70eba6dd435a2752aa1a6c4a847433}\label{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255ca9a70eba6dd435a2752aa1a6c4a847433}} 
+e\+Param\+Min\+Range&Minimum Range Index. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Param\+Max\+Range@{e\+Param\+Max\+Range}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Param\+Max\+Range@{e\+Param\+Max\+Range}}}\mbox{\Hypertarget{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255ca972ab541e58d91c2ff9f05dce09df6d3}\label{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255ca972ab541e58d91c2ff9f05dce09df6d3}} 
+e\+Param\+Max\+Range&Maximum Range Index. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Param\+Marpa\+Targets@{e\+Param\+Marpa\+Targets}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Param\+Marpa\+Targets@{e\+Param\+Marpa\+Targets}}}\mbox{\Hypertarget{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255ca50d210a15dcfb433e2d1ca3adeda3a7f}\label{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255ca50d210a15dcfb433e2d1ca3adeda3a7f}} 
+e\+Param\+Marpa\+Targets&Maximum Marpa Targets available. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8}\label{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Preset\+\_\+t@{e\+Preset\+\_\+t}}
+\index{e\+Preset\+\_\+t@{e\+Preset\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Preset\+\_\+t}{ePreset\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8}{Quantum\+Lib\+::e\+Preset\+\_\+t}}}
+
+Each Preset Mode contains individual settings for Gain, Colour Gain, Sea and Rain modes and values.~\newline
+The user is able to set and save their preferred settings for each mode and simply switch between modes to restore these settings. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca3a44dcc1f4965d1c2d0d7469e198ccc5}{e\+Setting\+Preset\+Mode}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Preset\+Harbour@{e\+Preset\+Harbour}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Preset\+Harbour@{e\+Preset\+Harbour}}}\mbox{\Hypertarget{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8a1fa316ab359d436967e65595b7d42491}\label{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8a1fa316ab359d436967e65595b7d42491}} 
+e\+Preset\+Harbour&Apply Harbour Mode Settings. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Preset\+Coastal@{e\+Preset\+Coastal}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Preset\+Coastal@{e\+Preset\+Coastal}}}\mbox{\Hypertarget{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8ac31a0d4112946bb5f637e2f512f1c554}\label{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8ac31a0d4112946bb5f637e2f512f1c554}} 
+e\+Preset\+Coastal&Apply Coastal Mode Settings. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Preset\+Offshore@{e\+Preset\+Offshore}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Preset\+Offshore@{e\+Preset\+Offshore}}}\mbox{\Hypertarget{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8a6603d2bc6ab4662c264d02614beef2af}\label{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8a6603d2bc6ab4662c264d02614beef2af}} 
+e\+Preset\+Offshore&Apply Offshore Mode Settings. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Preset\+Weather@{e\+Preset\+Weather}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Preset\+Weather@{e\+Preset\+Weather}}}\mbox{\Hypertarget{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8aafac12e1abcbbf293b703e013bbb0752}\label{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8aafac12e1abcbbf293b703e013bbb0752}} 
+e\+Preset\+Weather&Apply Weather Mode Settings. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619}\label{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Radar\+Mode\+\_\+t@{e\+Radar\+Mode\+\_\+t}}
+\index{e\+Radar\+Mode\+\_\+t@{e\+Radar\+Mode\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Radar\+Mode\+\_\+t}{eRadarMode\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619}{Quantum\+Lib\+::e\+Radar\+Mode\+\_\+t}}}
+
+Defines the current Radar operating mode.~\newline
+Radar can be commanded to Standby, Transmitting, Timed\+Tx or Power\+Down Modes.~\newline
+Sleep, Stalled and Self\+Test Fail modes are status only values sent from the Scanner.~\newline
+From Sleep mode, the display can set the scanner to Standby Mode.~\newline
+From Stalled and Self Test Failed modes, the display must power cycle the scanner. The scanner can be power cycled by setting Power\+Down waiting for the Sleep status and then selecting Standby Mode. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca979ebf5f13199739e12a44ae3a7d7596}{e\+Setting\+Radar\+Mode}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Radar\+Mode\+Standby@{e\+Radar\+Mode\+Standby}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Radar\+Mode\+Standby@{e\+Radar\+Mode\+Standby}}}\mbox{\Hypertarget{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a8576396d8951c15c888e7224cc1e0d8d}\label{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a8576396d8951c15c888e7224cc1e0d8d}} 
+e\+Radar\+Mode\+Standby&Standby Mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Radar\+Mode\+Transmitting@{e\+Radar\+Mode\+Transmitting}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Radar\+Mode\+Transmitting@{e\+Radar\+Mode\+Transmitting}}}\mbox{\Hypertarget{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619ac212b395ef161884f73c720cb3946512}\label{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619ac212b395ef161884f73c720cb3946512}} 
+e\+Radar\+Mode\+Transmitting&Transmitting Mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Radar\+Mode\+Power\+Down@{e\+Radar\+Mode\+Power\+Down}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Radar\+Mode\+Power\+Down@{e\+Radar\+Mode\+Power\+Down}}}\mbox{\Hypertarget{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a65227b135f03fa8c529db70b768e3f05}\label{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a65227b135f03fa8c529db70b768e3f05}} 
+e\+Radar\+Mode\+Power\+Down&Powering Down Mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Radar\+Mode\+Timed\+Tx@{e\+Radar\+Mode\+Timed\+Tx}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Radar\+Mode\+Timed\+Tx@{e\+Radar\+Mode\+Timed\+Tx}}}\mbox{\Hypertarget{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a6c535cdedaf4a745e2de5f9b0a93dd8d}\label{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a6c535cdedaf4a745e2de5f9b0a93dd8d}} 
+e\+Radar\+Mode\+Timed\+Tx&Timed Transmit Mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Radar\+Mode\+Sleep@{e\+Radar\+Mode\+Sleep}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Radar\+Mode\+Sleep@{e\+Radar\+Mode\+Sleep}}}\mbox{\Hypertarget{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a28bff97daf97c2e6a4ae0c243c5f5269}\label{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619a28bff97daf97c2e6a4ae0c243c5f5269}} 
+e\+Radar\+Mode\+Sleep&Radar has Powered down and is sleeping. (Notify Only). Set Standby mode to wake scanner from sllep mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Radar\+Mode\+Stalled@{e\+Radar\+Mode\+Stalled}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Radar\+Mode\+Stalled@{e\+Radar\+Mode\+Stalled}}}\mbox{\Hypertarget{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619abe82a05ef5b667a18b1c192816064a24}\label{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619abe82a05ef5b667a18b1c192816064a24}} 
+e\+Radar\+Mode\+Stalled&Scanner Rotation has stalled (Notify Only) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Radar\+Mode\+Self\+Test\+Failed@{e\+Radar\+Mode\+Self\+Test\+Failed}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Radar\+Mode\+Self\+Test\+Failed@{e\+Radar\+Mode\+Self\+Test\+Failed}}}\mbox{\Hypertarget{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619ab830f34cee803acb435608f42a670a70}\label{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619ab830f34cee803acb435608f42a670a70}} 
+e\+Radar\+Mode\+Self\+Test\+Failed&Scanner has failed Self Test (Notify only) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Radar\+Mode\+Invalid@{e\+Radar\+Mode\+Invalid}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Radar\+Mode\+Invalid@{e\+Radar\+Mode\+Invalid}}}\mbox{\Hypertarget{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619ade1de35fb60c2c3dea8f78060807b176}\label{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619ade1de35fb60c2c3dea8f78060807b176}} 
+e\+Radar\+Mode\+Invalid&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245}\label{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Rain\+Mode\+\_\+t@{e\+Rain\+Mode\+\_\+t}}
+\index{e\+Rain\+Mode\+\_\+t@{e\+Rain\+Mode\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Rain\+Mode\+\_\+t}{eRainMode\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245}{Quantum\+Lib\+::e\+Rain\+Mode\+\_\+t}}}
+
+Set Rain control O\+FF (equivalent to Manual 0\%) or Manual Setting \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca0fcb9b4e8d9018ce53ee9f57221392b1}{e\+Setting\+Rain\+Mode}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Rain\+Mode\+Off@{e\+Rain\+Mode\+Off}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Rain\+Mode\+Off@{e\+Rain\+Mode\+Off}}}\mbox{\Hypertarget{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245a23d55172337289a683d16dd7c790132f}\label{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245a23d55172337289a683d16dd7c790132f}} 
+e\+Rain\+Mode\+Off&Rain Mode O\+FF. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Rain\+Mode\+Manual@{e\+Rain\+Mode\+Manual}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Rain\+Mode\+Manual@{e\+Rain\+Mode\+Manual}}}\mbox{\Hypertarget{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245a23fd258b5a79942f441435c2dbe5543d}\label{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245a23fd258b5a79942f441435c2dbe5543d}} 
+e\+Rain\+Mode\+Manual&Rain Mode Manual. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06}\label{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Sea\+Curve\+\_\+t@{e\+Sea\+Curve\+\_\+t}}
+\index{e\+Sea\+Curve\+\_\+t@{e\+Sea\+Curve\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Sea\+Curve\+\_\+t}{eSeaCurve\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06}{Quantum\+Lib\+::e\+Sea\+Curve\+\_\+t}}}
+
+When manual Sea Mode is selected, the shape of the Sea curve can be altered.~\newline
+Selecting R$^\wedge$5.5 produces a steeper sea curve which removes more targets close to the centre of the P\+PI.~\newline
+Swicthcing sea curves may be useful depending on the antenna height and/or sea consitions. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caa0386489e8bf5279351a8c77b8a039ab}{e\+Setting\+Sea\+Clutter\+Curve}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Sea\+Curve\+\_\+\+R4@{e\+Sea\+Curve\+\_\+\+R4}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Sea\+Curve\+\_\+\+R4@{e\+Sea\+Curve\+\_\+\+R4}}}\mbox{\Hypertarget{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06a462a4673778fa74ce2715e58a1ab56d7}\label{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06a462a4673778fa74ce2715e58a1ab56d7}} 
+e\+Sea\+Curve\+\_\+\+R4&Use R$^\wedge$4 sea curve. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Sea\+Curve\+\_\+\+R5\+\_\+5@{e\+Sea\+Curve\+\_\+\+R5\+\_\+5}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Sea\+Curve\+\_\+\+R5\+\_\+5@{e\+Sea\+Curve\+\_\+\+R5\+\_\+5}}}\mbox{\Hypertarget{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06ab85d01c600b49ab59974c0c47a7ae6ab}\label{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06ab85d01c600b49ab59974c0c47a7ae6ab}} 
+e\+Sea\+Curve\+\_\+\+R5\+\_\+5&Use R$^\wedge$5.5 sea curve. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8d}\label{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8d}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Sea\+Mode\+\_\+t@{e\+Sea\+Mode\+\_\+t}}
+\index{e\+Sea\+Mode\+\_\+t@{e\+Sea\+Mode\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Sea\+Mode\+\_\+t}{eSeaMode\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8d}{Quantum\+Lib\+::e\+Sea\+Mode\+\_\+t}}}
+
+Set Sea control to Manual or Automatic.~\newline
+In Offshore and Coastal Preset Modes Auto Sea Clutter will dynamically adjust the Sea Clutter level.~\newline
+to suit the current sea state and conditions. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca593e70f6a28f2906edb5f75d295ec657}{e\+Setting\+Sea\+Mode}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Sea\+Mode\+Manual@{e\+Sea\+Mode\+Manual}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Sea\+Mode\+Manual@{e\+Sea\+Mode\+Manual}}}\mbox{\Hypertarget{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8da0585658ded88f8f99b0f1ced1edcb4b5}\label{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8da0585658ded88f8f99b0f1ced1edcb4b5}} 
+e\+Sea\+Mode\+Manual&Manual Control of Sea clutter 0 -\/100\%. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Sea\+Mode\+Auto@{e\+Sea\+Mode\+Auto}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Sea\+Mode\+Auto@{e\+Sea\+Mode\+Auto}}}\mbox{\Hypertarget{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8da4a8466cfd9643d6fa118b7819f06a34f}\label{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8da4a8466cfd9643d6fa118b7819f06a34f}} 
+e\+Sea\+Mode\+Auto&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54c}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54c}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Settings\+\_\+t@{e\+Settings\+\_\+t}}
+\index{e\+Settings\+\_\+t@{e\+Settings\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Settings\+\_\+t}{eSettings\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54c}{Quantum\+Lib\+::e\+Settings\+\_\+t}}}
+
+These can be used to send Commands to the scanner or listen for Notifications of parameters changing in the scaner.~\newline
+Some parameters can only be used for commands and some for notification only as detailed. Notification messages will be sent to the Setting\+Changed callback function \begin{DoxySeeAlso}{See also}
+Setting\+Changed 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Undefined@{e\+Setting\+Undefined}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Undefined@{e\+Setting\+Undefined}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cab28c2f16bbf5e97f0be16fe9816a695b}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cab28c2f16bbf5e97f0be16fe9816a695b}} 
+e\+Setting\+Undefined&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Radar\+Mode@{e\+Setting\+Radar\+Mode}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Radar\+Mode@{e\+Setting\+Radar\+Mode}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca979ebf5f13199739e12a44ae3a7d7596}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca979ebf5f13199739e12a44ae3a7d7596}} 
+e\+Setting\+Radar\+Mode&Set/\+Notify Standby, Transmit, Power Down. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619}{e\+Radar\+Mode\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Interference\+Rejection@{e\+Setting\+Interference\+Rejection}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Interference\+Rejection@{e\+Setting\+Interference\+Rejection}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caf38ecce557924c1f5dc32d8c8157c552}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caf38ecce557924c1f5dc32d8c8157c552}} 
+e\+Setting\+Interference\+Rejection&Level of Interference Rejection applied. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_a7dffda270c051259ba5338455f89b350}{e\+Interference\+Rejection\+Mode\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Bearing\+Alignment@{e\+Setting\+Bearing\+Alignment}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Bearing\+Alignment@{e\+Setting\+Bearing\+Alignment}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cade83d898b61d6af0511ae31eb023ab6b}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cade83d898b61d6af0511ae31eb023ab6b}} 
+e\+Setting\+Bearing\+Alignment&Bearing alignment -\/179.\+5 to +180.0. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Timed\+Transmit@{e\+Setting\+Timed\+Transmit}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Timed\+Transmit@{e\+Setting\+Timed\+Transmit}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caab7ab78364b884006412b502e7d09572}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caab7ab78364b884006412b502e7d09572}} 
+e\+Setting\+Timed\+Transmit&Timed Transmit Parameters, Standby period and transmit scan count. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_timed_transmit__t}{Timed\+Transmit\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Tx\+Frequency@{e\+Setting\+Tx\+Frequency}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Tx\+Frequency@{e\+Setting\+Tx\+Frequency}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca6fbcbee1bae338a4f45eb87c355be4fe}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca6fbcbee1bae338a4f45eb87c355be4fe}} 
+e\+Setting\+Tx\+Frequency&Tx Frequency. Nominal, High or Low. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019}{e\+Transmit\+Frequency\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Guard\+Zone\+Sensitivity@{e\+Setting\+Guard\+Zone\+Sensitivity}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Guard\+Zone\+Sensitivity@{e\+Setting\+Guard\+Zone\+Sensitivity}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca4c346eb86fb34b8c74bf39651f8948e9}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca4c346eb86fb34b8c74bf39651f8948e9}} 
+e\+Setting\+Guard\+Zone\+Sensitivity&Gaurd Zone sensitiivty 0-\/100\%. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Guard\+Zone1@{e\+Setting\+Guard\+Zone1}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Guard\+Zone1@{e\+Setting\+Guard\+Zone1}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca9b2212b5d2855a4c2ea7333997ff63f7}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca9b2212b5d2855a4c2ea7333997ff63f7}} 
+e\+Setting\+Guard\+Zone1&Guard Zone 1 start/end range/bearing. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_zone__t}{Zone\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Guard\+Zone2@{e\+Setting\+Guard\+Zone2}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Guard\+Zone2@{e\+Setting\+Guard\+Zone2}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca310cbcc138ac9d7731a0b9256989aa3c}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca310cbcc138ac9d7731a0b9256989aa3c}} 
+e\+Setting\+Guard\+Zone2&Guard Zone 2 start/end range/bearing. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_zone__t}{Zone\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Guard\+Zone\+Enable@{e\+Setting\+Guard\+Zone\+Enable}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Guard\+Zone\+Enable@{e\+Setting\+Guard\+Zone\+Enable}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caa5baecb408949642582b8300529a57d6}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caa5baecb408949642582b8300529a57d6}} 
+e\+Setting\+Guard\+Zone\+Enable&Enable/\+Disable Guard Zone 1 or 2 (Command only) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_zone_state__t}{Zone\+State\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Auto\+Accquire\+Zone1@{e\+Setting\+Auto\+Accquire\+Zone1}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Auto\+Accquire\+Zone1@{e\+Setting\+Auto\+Accquire\+Zone1}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca2b2bfab6ea7e4e63923519c6a34c3e19}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca2b2bfab6ea7e4e63923519c6a34c3e19}} 
+e\+Setting\+Auto\+Accquire\+Zone1&Auto Acquire Zone 1 start/end range/bearing. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_zone__t}{Zone\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Auto\+Accquire\+Zone2@{e\+Setting\+Auto\+Accquire\+Zone2}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Auto\+Accquire\+Zone2@{e\+Setting\+Auto\+Accquire\+Zone2}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca07c900683db032067542bd1bcbcdc418}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca07c900683db032067542bd1bcbcdc418}} 
+e\+Setting\+Auto\+Accquire\+Zone2&Auto Acquire Zone 2 start/end range/bearing. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_zone__t}{Zone\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Auto\+Acquire\+Mode@{e\+Setting\+Auto\+Acquire\+Mode}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Auto\+Acquire\+Mode@{e\+Setting\+Auto\+Acquire\+Mode}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca494b3f9a3bd6a6cd26638f56ef5ca2f2}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca494b3f9a3bd6a6cd26638f56ef5ca2f2}} 
+e\+Setting\+Auto\+Acquire\+Mode&0-\/ Off (Feature currently not supported) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_ad91dac4bf2ef5d3615cb423383b961d8}{e\+Auto\+Acquire\+Mode\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Auto\+Acquire\+Zone\+Enable@{e\+Setting\+Auto\+Acquire\+Zone\+Enable}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Auto\+Acquire\+Zone\+Enable@{e\+Setting\+Auto\+Acquire\+Zone\+Enable}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cac2aed9d73c5515b007216538f524dbc4}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cac2aed9d73c5515b007216538f524dbc4}} 
+e\+Setting\+Auto\+Acquire\+Zone\+Enable&Enable/\+Disable Auto Acquire Zone 1 or 2 (Command only) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_zone_state__t}{Zone\+State\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Custom\+Ranges@{e\+Setting\+Custom\+Ranges}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Custom\+Ranges@{e\+Setting\+Custom\+Ranges}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca4ea9dd0ffc6b9f145c4111aa3bf1ff81}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca4ea9dd0ffc6b9f145c4111aa3bf1ff81}} 
+e\+Setting\+Custom\+Ranges&List of Instrumented Ranges corresponding to Range Index (Notification Only) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Range@{e\+Setting\+Range}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Range@{e\+Setting\+Range}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca779bd9c4b46f923122621f00e0f8e751}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca779bd9c4b46f923122621f00e0f8e751}} 
+e\+Setting\+Range&Set Range Index. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Preset\+Mode@{e\+Setting\+Preset\+Mode}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Preset\+Mode@{e\+Setting\+Preset\+Mode}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca3a44dcc1f4965d1c2d0d7469e198ccc5}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca3a44dcc1f4965d1c2d0d7469e198ccc5}} 
+e\+Setting\+Preset\+Mode&Set Preset Mode Harbour, Coastal, Offshore, Weather. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_a74d29df2264e3cb8e03e70007c7152f8}{e\+Preset\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Gain\+Mode@{e\+Setting\+Gain\+Mode}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Gain\+Mode@{e\+Setting\+Gain\+Mode}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cac2b7c0f09c75a3de9a2780d3bae0296f}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cac2b7c0f09c75a3de9a2780d3bae0296f}} 
+e\+Setting\+Gain\+Mode&Gain Mode, Auto or Manual. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_a20b6e658baa33fde788739a47dab2e13}{e\+Gain\+Mode\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Gain\+Value@{e\+Setting\+Gain\+Value}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Gain\+Value@{e\+Setting\+Gain\+Value}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caff147e67867aac0fa88b8d1e2a849e66}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caff147e67867aac0fa88b8d1e2a849e66}} 
+e\+Setting\+Gain\+Value&Gain Value 0-\/100\%. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Colour\+Gain\+Mode@{e\+Setting\+Colour\+Gain\+Mode}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Colour\+Gain\+Mode@{e\+Setting\+Colour\+Gain\+Mode}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cafef9f6dac71f11bdb6b97750953d140b}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cafef9f6dac71f11bdb6b97750953d140b}} 
+e\+Setting\+Colour\+Gain\+Mode&Colour Gain Mode, Auto or Manual. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_a4e404872667f9386ba59973f4b29fe65}{e\+Colour\+Gain\+Mode\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Colour\+Gain\+Value@{e\+Setting\+Colour\+Gain\+Value}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Colour\+Gain\+Value@{e\+Setting\+Colour\+Gain\+Value}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca26f275ce5b14409971b6085468c2d632}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca26f275ce5b14409971b6085468c2d632}} 
+e\+Setting\+Colour\+Gain\+Value&Colour Gain Value, 0-\/100\%. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Sea\+Mode@{e\+Setting\+Sea\+Mode}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Sea\+Mode@{e\+Setting\+Sea\+Mode}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca593e70f6a28f2906edb5f75d295ec657}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca593e70f6a28f2906edb5f75d295ec657}} 
+e\+Setting\+Sea\+Mode&Sea Mode, Auto or Manual. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_a66c359df4d1d3895303ab24910200c8d}{e\+Sea\+Mode\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Sea\+Value@{e\+Setting\+Sea\+Value}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Sea\+Value@{e\+Setting\+Sea\+Value}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caeed49a40b0047ca122df916a7d190c69}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caeed49a40b0047ca122df916a7d190c69}} 
+e\+Setting\+Sea\+Value&Sea Value 0-\/100\%. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Rain\+Mode@{e\+Setting\+Rain\+Mode}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Rain\+Mode@{e\+Setting\+Rain\+Mode}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca0fcb9b4e8d9018ce53ee9f57221392b1}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca0fcb9b4e8d9018ce53ee9f57221392b1}} 
+e\+Setting\+Rain\+Mode&Rain Mode, Auto or Manual. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_a881f6940f59e1d22cecd947de841b245}{e\+Rain\+Mode\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Rain\+Value@{e\+Setting\+Rain\+Value}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Rain\+Value@{e\+Setting\+Rain\+Value}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca5a5f9013f10d3d32dd69aa19a527ad23}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca5a5f9013f10d3d32dd69aa19a527ad23}} 
+e\+Setting\+Rain\+Value&Rain Value 0-\/100\%. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Target\+Expansion@{e\+Setting\+Target\+Expansion}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Target\+Expansion@{e\+Setting\+Target\+Expansion}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cae155e2cdb18bbf8e212235d18091e519}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cae155e2cdb18bbf8e212235d18091e519}} 
+e\+Setting\+Target\+Expansion&Target Expansion on/off. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fb}{e\+Target\+Expansion\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Sea\+Clutter\+Curve@{e\+Setting\+Sea\+Clutter\+Curve}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Sea\+Clutter\+Curve@{e\+Setting\+Sea\+Clutter\+Curve}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caa0386489e8bf5279351a8c77b8a039ab}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caa0386489e8bf5279351a8c77b8a039ab}} 
+e\+Setting\+Sea\+Clutter\+Curve&Sea clutter curve 1 or 2 -\/ Manual Sea mode only. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_aeaeea421c9323b85e6b45fa78e3b2a06}{e\+Sea\+Curve\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Main\+Bang@{e\+Setting\+Main\+Bang}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Main\+Bang@{e\+Setting\+Main\+Bang}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca55d63bc25572f8f4212ffd0f04d33830}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca55d63bc25572f8f4212ffd0f04d33830}} 
+e\+Setting\+Main\+Bang&Turn Main Bang Suppression O\+N/\+O\+FF. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_af78fc1282ff8d85de46fff58a89f5798}{e\+Main\+Bang\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Doppler\+Mode@{e\+Setting\+Doppler\+Mode}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Doppler\+Mode@{e\+Setting\+Doppler\+Mode}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca10e888ffc18101208220d6445208cd6d}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca10e888ffc18101208220d6445208cd6d}} 
+e\+Setting\+Doppler\+Mode&Turn doppler mode O\+N/\+O\+FF. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_a67a865bb9894671b27595a61dfcd44b5}{e\+Doppler\+Mode\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Doppler\+Active@{e\+Setting\+Doppler\+Active}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Doppler\+Active@{e\+Setting\+Doppler\+Active}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca5c53d22a83382134c9eb12009b61789f}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca5c53d22a83382134c9eb12009b61789f}} 
+e\+Setting\+Doppler\+Active&Indication if Dopler is active (Notification only) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_a7a034f49c93f16195096c2ecf89432d4}{e\+Doppler\+Active\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Timed\+Transmit\+Remaining@{e\+Setting\+Timed\+Transmit\+Remaining}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Timed\+Transmit\+Remaining@{e\+Setting\+Timed\+Transmit\+Remaining}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cab4e5cf461eae89a7a1b49e675f4616d3}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cab4e5cf461eae89a7a1b49e675f4616d3}} 
+e\+Setting\+Timed\+Transmit\+Remaining&Time remaining in Transmit mode before standby period (Notification only) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Nav\+Data@{e\+Setting\+Nav\+Data}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Nav\+Data@{e\+Setting\+Nav\+Data}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cab8f789a743fcfbea80325dd7ccdfa613}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cab8f789a743fcfbea80325dd7ccdfa613}} 
+e\+Setting\+Nav\+Data&Send Heading, S\+OG and C\+OG data to scanner for Marpa/\+Doppler functionality (Command only) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_nav_data__t}{Nav\+Data\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Marpa\+Setup@{e\+Setting\+Marpa\+Setup}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Marpa\+Setup@{e\+Setting\+Marpa\+Setup}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cae0da3a53a8abab02dfaeebb7f79f2840}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cae0da3a53a8abab02dfaeebb7f79f2840}} 
+e\+Setting\+Marpa\+Setup&Send Marpa Alarm setup data to scanner (Command only) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_marpa_setup__t}{Marpa\+Setup\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Marpa\+Designate@{e\+Setting\+Marpa\+Designate}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Marpa\+Designate@{e\+Setting\+Marpa\+Designate}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca6ebc12fe83f3f2c5c43089b20dfbaf56}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca6ebc12fe83f3f2c5c43089b20dfbaf56}} 
+e\+Setting\+Marpa\+Designate&Designate Marpa Target (Command only) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_marpa_designate__t}{Marpa\+Designate\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Marpa\+Clear@{e\+Setting\+Marpa\+Clear}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Marpa\+Clear@{e\+Setting\+Marpa\+Clear}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caca2370b77f4502b02958d503c68c1c41}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caca2370b77f4502b02958d503c68c1c41}} 
+e\+Setting\+Marpa\+Clear&Remove Marpa Target (Command Only) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Alarm\+Ack@{e\+Setting\+Alarm\+Ack}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Alarm\+Ack@{e\+Setting\+Alarm\+Ack}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca66e51b6ee77469163792596584c4711b}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca66e51b6ee77469163792596584c4711b}} 
+e\+Setting\+Alarm\+Ack&Acknowledge alarm (Command only) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_alarm_ack__t}{Alarm\+Ack\+\_\+t}} 
+\end{DoxySeeAlso}
+\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Main\+Software\+Version@{e\+Setting\+Main\+Software\+Version}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Main\+Software\+Version@{e\+Setting\+Main\+Software\+Version}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca7134e2efea21449d5207d20f28d21622}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca7134e2efea21449d5207d20f28d21622}} 
+e\+Setting\+Main\+Software\+Version&Main App Software version (Major $\ast$ 100) + Minor (Notification Only) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Psu\+Software\+Version@{e\+Setting\+Psu\+Software\+Version}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Psu\+Software\+Version@{e\+Setting\+Psu\+Software\+Version}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caaa55091dcc02da0a7339c777cec5afc1}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caaa55091dcc02da0a7339c777cec5afc1}} 
+e\+Setting\+Psu\+Software\+Version&P\+SU App Software version (Major $\ast$ 100) + Minor (Notification Only) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Fpga\+Software\+Version@{e\+Setting\+Fpga\+Software\+Version}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Fpga\+Software\+Version@{e\+Setting\+Fpga\+Software\+Version}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cadf0b0d89a53cef2a78f4f61b440966ca}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cadf0b0d89a53cef2a78f4f61b440966ca}} 
+e\+Setting\+Fpga\+Software\+Version&F\+P\+GA Firmware version (Major $\ast$ 100) + Minor (Notification Only) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+Wi\+Fi\+Software\+Version@{e\+Setting\+Wi\+Fi\+Software\+Version}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+Wi\+Fi\+Software\+Version@{e\+Setting\+Wi\+Fi\+Software\+Version}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca06f12cac94527bc852bdba146aba06d7}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca06f12cac94527bc852bdba146aba06d7}} 
+e\+Setting\+Wi\+Fi\+Software\+Version&Wi\+Fi Firmware version (Major $\ast$ 100) + Minor (Notification Only) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Setting\+W3\+Software\+Version@{e\+Setting\+W3\+Software\+Version}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Setting\+W3\+Software\+Version@{e\+Setting\+W3\+Software\+Version}}}\mbox{\Hypertarget{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caa5dd56d85741141357e39c6f87a167a2}\label{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54caa5dd56d85741141357e39c6f87a167a2}} 
+e\+Setting\+W3\+Software\+Version&Wired Adaptor Software version (Major $\ast$ 100) + Minor (Notification Only) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fb}\label{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fb}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Target\+Expansion\+\_\+t@{e\+Target\+Expansion\+\_\+t}}
+\index{e\+Target\+Expansion\+\_\+t@{e\+Target\+Expansion\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Target\+Expansion\+\_\+t}{eTargetExpansion\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fb}{Quantum\+Lib\+::e\+Target\+Expansion\+\_\+t}}}
+
+when target expansion is turned on a longer pulse wiidth is used to increase the size of returns from targets. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cae155e2cdb18bbf8e212235d18091e519}{e\+Setting\+Target\+Expansion}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Target\+Expansion\+Off@{e\+Target\+Expansion\+Off}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Target\+Expansion\+Off@{e\+Target\+Expansion\+Off}}}\mbox{\Hypertarget{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fba08ca29753d9913ebb2d4affbd443984a}\label{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fba08ca29753d9913ebb2d4affbd443984a}} 
+e\+Target\+Expansion\+Off&Target Expansion O\+FF. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Target\+Expansion\+On@{e\+Target\+Expansion\+On}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Target\+Expansion\+On@{e\+Target\+Expansion\+On}}}\mbox{\Hypertarget{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fba642e93b8e62df601860c5ea46328c0cf}\label{namespace_quantum_lib_affbc8bc0775b14917688e0e6d2fab0fba642e93b8e62df601860c5ea46328c0cf}} 
+e\+Target\+Expansion\+On&Target Expansion ON. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9e}\label{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9e}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Target\+State\+\_\+t@{e\+Target\+State\+\_\+t}}
+\index{e\+Target\+State\+\_\+t@{e\+Target\+State\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Target\+State\+\_\+t}{eTargetState\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9e}{Quantum\+Lib\+::e\+Target\+State\+\_\+t}}}
+
+Indicates state of currently tracked target, Acquiring, Safe, Dangerous or Lost \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t}{Marpa\+Data\+\_\+t}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Acquiring@{e\+Acquiring}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Acquiring@{e\+Acquiring}}}\mbox{\Hypertarget{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea3e3b3edd9ca63eb21b217eca663634af}\label{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea3e3b3edd9ca63eb21b217eca663634af}} 
+e\+Acquiring&Initial state, remains in this state until target is validated (10 hits) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Safe@{e\+Safe}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Safe@{e\+Safe}}}\mbox{\Hypertarget{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea01453dc7d555f656169740b58f76042c}\label{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea01453dc7d555f656169740b58f76042c}} 
+e\+Safe&Normal state for target tracking. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Dangerous@{e\+Dangerous}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Dangerous@{e\+Dangerous}}}\mbox{\Hypertarget{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea46848e55b4d0c8269a92437d37ec1eae}\label{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea46848e55b4d0c8269a92437d37ec1eae}} 
+e\+Dangerous&Target Dangerous will be within safe zone within the time to safe zone period. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Lost@{e\+Lost}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Lost@{e\+Lost}}}\mbox{\Hypertarget{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea5ccf5adddd7a9bbf0724017ccf7123e7}\label{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9ea5ccf5adddd7a9bbf0724017ccf7123e7}} 
+e\+Lost&Target Lost. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019}\label{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019}} 
+\index{Quantum\+Lib@{Quantum\+Lib}!e\+Transmit\+Frequency\+\_\+t@{e\+Transmit\+Frequency\+\_\+t}}
+\index{e\+Transmit\+Frequency\+\_\+t@{e\+Transmit\+Frequency\+\_\+t}!Quantum\+Lib@{Quantum\+Lib}}
+\subsubsection{\texorpdfstring{e\+Transmit\+Frequency\+\_\+t}{eTransmitFrequency\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019}{Quantum\+Lib\+::e\+Transmit\+Frequency\+\_\+t}}}
+
+Transmit Frequency can be altered to improve interfernce rejection.~\newline
+The transmit frequency can be set above or below the nominal 9.\+4\+G\+Hz frequency.~\newline
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca6fbcbee1bae338a4f45eb87c355be4fe}{e\+Setting\+Tx\+Frequency}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Transmit\+Frequency\+Nominal@{e\+Transmit\+Frequency\+Nominal}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Transmit\+Frequency\+Nominal@{e\+Transmit\+Frequency\+Nominal}}}\mbox{\Hypertarget{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019ad88ebc5c380e9dfd60c4fda4141ff095}\label{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019ad88ebc5c380e9dfd60c4fda4141ff095}} 
+e\+Transmit\+Frequency\+Nominal&Nominal Frequency. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Transmit\+Frequency\+Low@{e\+Transmit\+Frequency\+Low}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Transmit\+Frequency\+Low@{e\+Transmit\+Frequency\+Low}}}\mbox{\Hypertarget{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019af585e32aa9a7ffd588f273ae0f208d0c}\label{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019af585e32aa9a7ffd588f273ae0f208d0c}} 
+e\+Transmit\+Frequency\+Low&Below Nominal Frequency. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Transmit\+Frequency\+High@{e\+Transmit\+Frequency\+High}!Quantum\+Lib@{Quantum\+Lib}}\index{Quantum\+Lib@{Quantum\+Lib}!e\+Transmit\+Frequency\+High@{e\+Transmit\+Frequency\+High}}}\mbox{\Hypertarget{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019ad24b42c40911a062918243143d796d57}\label{namespace_quantum_lib_af636ea7f14f5a62bfcfc1132c9c78019ad24b42c40911a062918243143d796d57}} 
+e\+Transmit\+Frequency\+High&Above nominal Frequency. \\
+\hline
+
+\end{DoxyEnumFields}

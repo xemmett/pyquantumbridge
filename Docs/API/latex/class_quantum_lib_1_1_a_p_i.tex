@@ -1,0 +1,148 @@
+\hypertarget{class_quantum_lib_1_1_a_p_i}{}\section{Quantum\+Lib\+:\+:A\+PI Class Reference}
+\label{class_quantum_lib_1_1_a_p_i}\index{Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}}
+
+
+Defines the interface between the Client application and the Quantum S\+DK Library This class is exported from the library.  
+
+
+
+
+{\ttfamily \#include $<$Quantum\+Lib.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{e\+Error\+Code\+\_\+t}} \mbox{\hyperlink{class_quantum_lib_1_1_a_p_i_a6be3553bb420e8f804d1ea652273cc99}{Open}} ()
+\item 
+static void \mbox{\hyperlink{class_quantum_lib_1_1_a_p_i_a6bbad3a3b12aa11c0347edf6cd467622}{Close}} ()
+\item 
+static \mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{e\+Error\+Code\+\_\+t}} \mbox{\hyperlink{class_quantum_lib_1_1_a_p_i_ad63c6415fc479338caecd97f05c06b02}{Register\+For\+Scanner\+Notifications}} (\mbox{\hyperlink{class_quantum_lib_1_1_i_notify}{I\+Notify}} $\ast$p\+I\+Notify)
+\item 
+static void \mbox{\hyperlink{class_quantum_lib_1_1_a_p_i_ac0ea416a147cf8187e7595cedaf2fdf0}{De\+Register\+For\+Scanner\+Notifications}} (\mbox{\hyperlink{class_quantum_lib_1_1_i_notify}{I\+Notify}} $\ast$p\+I\+Notify)
+\item 
+static \mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{e\+Error\+Code\+\_\+t}} \mbox{\hyperlink{class_quantum_lib_1_1_a_p_i_a9102a0ac0ca44b4d4f7a677e48b3d277}{New\+Scanner\+Setting}} (\mbox{\hyperlink{struct_quantum_lib_1_1_setting_data__t}{Setting\+Data\+\_\+t}} \&r\+Setting\+Data)
+\item 
+static \mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{e\+Error\+Code\+\_\+t}} \mbox{\hyperlink{class_quantum_lib_1_1_a_p_i_a69765cc3f7ccd4e1a6c8a3f3f0b0aeeb}{Get\+Scanner\+Details}} (uint32\+\_\+t Scanner\+Index, \mbox{\hyperlink{struct_quantum_lib_1_1_scanner_details__t}{Scanner\+Details\+\_\+t}} \&r\+Scanner\+Details)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the interface between the Client application and the Quantum S\+DK Library This class is exported from the library. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quantum_lib_1_1_a_p_i_a6bbad3a3b12aa11c0347edf6cd467622}\label{class_quantum_lib_1_1_a_p_i_a6bbad3a3b12aa11c0347edf6cd467622}} 
+\index{Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}!Close@{Close}}
+\index{Close@{Close}!Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+A\+P\+I\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Close ethernet interface and destroys classes created by Open. \mbox{\Hypertarget{class_quantum_lib_1_1_a_p_i_ac0ea416a147cf8187e7595cedaf2fdf0}\label{class_quantum_lib_1_1_a_p_i_ac0ea416a147cf8187e7595cedaf2fdf0}} 
+\index{Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}!De\+Register\+For\+Scanner\+Notifications@{De\+Register\+For\+Scanner\+Notifications}}
+\index{De\+Register\+For\+Scanner\+Notifications@{De\+Register\+For\+Scanner\+Notifications}!Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{De\+Register\+For\+Scanner\+Notifications()}{DeRegisterForScannerNotifications()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+A\+P\+I\+::\+De\+Register\+For\+Scanner\+Notifications (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quantum_lib_1_1_i_notify}{I\+Notify}} $\ast$}]{p\+I\+Notify }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Removes the class interface for Scanner Notification Messages \mbox{\Hypertarget{class_quantum_lib_1_1_a_p_i_a69765cc3f7ccd4e1a6c8a3f3f0b0aeeb}\label{class_quantum_lib_1_1_a_p_i_a69765cc3f7ccd4e1a6c8a3f3f0b0aeeb}} 
+\index{Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}!Get\+Scanner\+Details@{Get\+Scanner\+Details}}
+\index{Get\+Scanner\+Details@{Get\+Scanner\+Details}!Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{Get\+Scanner\+Details()}{GetScannerDetails()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+A\+P\+I\+::\+Get\+Scanner\+Details (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{Scanner\+Index,  }\item[{\mbox{\hyperlink{struct_quantum_lib_1_1_scanner_details__t}{Scanner\+Details\+\_\+t}} \&}]{r\+Scanner\+Details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a reference to the Scanner\+Details structure, containing the Serial Number and Textual description of the scanner. 
+\begin{DoxyParams}{Parameters}
+{\em Scanner\+Index} & Index returned by \mbox{\hyperlink{class_quantum_lib_1_1_i_notify_a5b91aeecff71a2232cddf73199cc0213}{Quantum\+Lib\+::\+I\+Notify\+::\+Scanner\+List\+Changed()}} function. \\
+\hline
+{\em r\+Scanner\+Details} & Reference to scanner details structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e\+No\+Error 
+
+e\+Error\+Invalid\+Scanner\+Index 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{e\+Error\+Code\+\_\+t}} 
+
+\mbox{\hyperlink{struct_quantum_lib_1_1_scanner_details__t}{Scanner\+Details\+\_\+t}} 
+
+\mbox{\hyperlink{class_quantum_lib_1_1_i_notify_a5b91aeecff71a2232cddf73199cc0213}{Quantum\+Lib\+::\+I\+Notify\+::\+Scanner\+List\+Changed()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_quantum_lib_1_1_a_p_i_a9102a0ac0ca44b4d4f7a677e48b3d277}\label{class_quantum_lib_1_1_a_p_i_a9102a0ac0ca44b4d4f7a677e48b3d277}} 
+\index{Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}!New\+Scanner\+Setting@{New\+Scanner\+Setting}}
+\index{New\+Scanner\+Setting@{New\+Scanner\+Setting}!Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{New\+Scanner\+Setting()}{NewScannerSetting()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_quantum_lib_8h_ad3e98d692c0cc10807f05b7d009ebadb}{Q\+U\+A\+N\+T\+U\+M\+L\+I\+B\+\_\+\+A\+PI}} \mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{e\+Error\+Code\+\_\+t}} Quantum\+Lib\+::\+A\+P\+I\+::\+New\+Scanner\+Setting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_quantum_lib_1_1_setting_data__t}{Setting\+Data\+\_\+t}} \&}]{r\+Setting\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function to call to control scanner 
+\begin{DoxyParams}{Parameters}
+{\em r\+Setting\+Data} & Reference to \mbox{\hyperlink{struct_quantum_lib_1_1_setting_data__t}{Setting\+Data\+\_\+t}} structure. This gives details of the Setting that has cahnged and its new value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+e\+No\+Error 
+
+e\+Error\+Invalid\+Value 
+
+e\+Error\+Feature\+Not\+Supported 
+
+e\+Error\+Invalid\+Setting 
+
+e\+Error\+Ethernet\+Tx\+Message\+Length 
+
+e\+Error\+General\+Failure 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{e\+Error\+Code\+\_\+t}} 
+
+\mbox{\hyperlink{struct_quantum_lib_1_1_setting_data__t}{Setting\+Data\+\_\+t}} 
+
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54c}{e\+Settings\+\_\+t}} 
+
+\mbox{\hyperlink{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9c}{e\+Channel\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_quantum_lib_1_1_a_p_i_a6be3553bb420e8f804d1ea652273cc99}\label{class_quantum_lib_1_1_a_p_i_a6be3553bb420e8f804d1ea652273cc99}} 
+\index{Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}!Open@{Open}}
+\index{Open@{Open}!Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+A\+P\+I\+::\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialises the D\+LL, creates and initialises the ethernet interface and sockets.~\newline
+Enable communications between the D\+LL and the scanner.~\newline
+Creates classes for encoding and decoding messages.~\newline
+\begin{DoxyReturn}{Returns}
+e\+No\+Error 
+
+e\+Error\+Out\+Of\+Memory 
+
+e\+Error\+General\+Failure 
+
+e\+Error\+Ethernet\+Interface\+Failure 
+
+e\+Error\+Ethernet\+Failed\+To\+Get\+Ipaddress 
+
+e\+Error\+Ethernet\+Failed\+To\+Create\+Sys\+Sockets 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{e\+Error\+Code\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_quantum_lib_1_1_a_p_i_ad63c6415fc479338caecd97f05c06b02}\label{class_quantum_lib_1_1_a_p_i_ad63c6415fc479338caecd97f05c06b02}} 
+\index{Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}!Register\+For\+Scanner\+Notifications@{Register\+For\+Scanner\+Notifications}}
+\index{Register\+For\+Scanner\+Notifications@{Register\+For\+Scanner\+Notifications}!Quantum\+Lib\+::\+A\+PI@{Quantum\+Lib\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{Register\+For\+Scanner\+Notifications()}{RegisterForScannerNotifications()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+A\+P\+I\+::\+Register\+For\+Scanner\+Notifications (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quantum_lib_1_1_i_notify}{I\+Notify}} $\ast$}]{p\+I\+Notify }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Defines the class that should be called for Scanner Notification Messages \begin{DoxyReturn}{Returns}
+e\+No\+Error 
+
+e\+Error\+Notify\+Already\+Registered 
+
+e\+Error\+Invalid\+Notify\+Function 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_ae3625bf7f9a1ca0d93adb9a2e0194d47}{e\+Error\+Code\+\_\+t}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\mbox{\hyperlink{_quantum_lib_8h}{Quantum\+Lib.\+h}}\end{DoxyCompactItemize}

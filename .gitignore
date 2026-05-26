@@ -1,0 +1,42 @@
+# Raymarine SDK binaries (proprietary, not redistributable)
+QuantumLib.dll
+quantum_bridge.pyd
+Output/
+unins000.dat
+unins000.exe
+
+# Compiled libraries and executables
+*.lib
+*.exe
+*.obj
+*.pch
+*.iobj
+*.ipdb
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+PyQuantumBridge/build/
+
+# Visual Studio
+*.sdf
+*.VC.db
+*.VC.opendb
+*.user
+*.suo
+.vs/
+ipch/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Captured radar data
+data_*/
+QDebug.txt

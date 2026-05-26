@@ -1,0 +1,175 @@
+\hypertarget{class_quantum_lib_1_1_i_notify}{}\section{Quantum\+Lib\+:\+:I\+Notify Class Reference}
+\label{class_quantum_lib_1_1_i_notify}\index{Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}}
+
+
+Base class for notification messages received from the Radar.~\newline
+.  
+
+
+
+
+{\ttfamily \#include $<$Quantum\+Lib.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_quantum_lib_1_1_i_notify_a8605cda14fb993a16484d428d4361d00}{I\+Notify}} ()
+\item 
+virtual \mbox{\hyperlink{class_quantum_lib_1_1_i_notify_a9f00b489e5d31a80e63801166bb13e3e}{$\sim$\+I\+Notify}} ()
+\item 
+virtual void \mbox{\hyperlink{class_quantum_lib_1_1_i_notify_a5b91aeecff71a2232cddf73199cc0213}{Scanner\+List\+Changed}} (uint32\+\_\+t count)=0
+\item 
+virtual void \mbox{\hyperlink{class_quantum_lib_1_1_i_notify_a5e4b6945d8009cc8f820353237ef489c}{Spoke\+Data\+Received}} (uint32\+\_\+t Serial\+Number, \mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t}{Spoke\+Data\+\_\+t}} \&r\+Spoke\+Data)
+\item 
+virtual void \mbox{\hyperlink{class_quantum_lib_1_1_i_notify_aa7224861ce088af10d5b471d9550bb21}{Setting\+Changed}} (\mbox{\hyperlink{struct_quantum_lib_1_1_setting_data__t}{Quantum\+Lib\+::\+Setting\+Data\+\_\+t}} \&r\+Setting\+Data)
+\item 
+virtual void \mbox{\hyperlink{class_quantum_lib_1_1_i_notify_ae92378ad5ad3bdee002306a0723a5565}{Feature\+Changed}} (uint32\+\_\+t Serial\+Number, \mbox{\hyperlink{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777}{e\+Features\+\_\+t}} Feature, bool Supported)
+\item 
+virtual void \mbox{\hyperlink{class_quantum_lib_1_1_i_notify_a884178a07e8f2143eb1511bee99a1e51}{Parameter\+Changed}} (uint32\+\_\+t Serial\+Number, \mbox{\hyperlink{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255c}{Quantum\+Lib\+::e\+Parameters\+\_\+t}} Parameter, uint32\+\_\+t Value)
+\item 
+virtual void \mbox{\hyperlink{class_quantum_lib_1_1_i_notify_a33dec2e67057bb72fd0a00dc4e001fb7}{Marpa\+Data\+Changed}} (uint32\+\_\+t Serial\+Number, \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t}{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}} \&r\+Marpa\+Data)
+\item 
+virtual void \mbox{\hyperlink{class_quantum_lib_1_1_i_notify_ab336885c5d718ed5bbe1eaab959bf880}{Alarm\+Data\+Changed}} (uint32\+\_\+t Serial\+Number, \mbox{\hyperlink{struct_quantum_lib_1_1_alarm_data__t}{Quantum\+Lib\+::\+Alarm\+Data\+\_\+t}} \&r\+Alarm\+Data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for notification messages received from the Radar.~\newline
+. 
+
+The client application should implement an instance of the \mbox{\hyperlink{class_quantum_lib_1_1_i_notify}{I\+Notify}} class to receive notification messages. Scanner\+List\+Changed is implemented as a pure virtual function and must be implemented by the application to determine the number (if any) of Scanners connected. Other methods in the \mbox{\hyperlink{class_quantum_lib_1_1_i_notify}{I\+Notify}} class are virtual functions with an empty default implementation so that the application layer only needs to implement the functions of interest. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_quantum_lib_1_1_i_notify_a8605cda14fb993a16484d428d4361d00}\label{class_quantum_lib_1_1_i_notify_a8605cda14fb993a16484d428d4361d00}} 
+\index{Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}!I\+Notify@{I\+Notify}}
+\index{I\+Notify@{I\+Notify}!Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}}
+\subsubsection{\texorpdfstring{I\+Notify()}{INotify()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+I\+Notify\+::\+I\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_quantum_lib_1_1_i_notify_a9f00b489e5d31a80e63801166bb13e3e}\label{class_quantum_lib_1_1_i_notify_a9f00b489e5d31a80e63801166bb13e3e}} 
+\index{Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}!````~I\+Notify@{$\sim$\+I\+Notify}}
+\index{````~I\+Notify@{$\sim$\+I\+Notify}!Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Notify()}{~INotify()}}
+{\footnotesize\ttfamily virtual Quantum\+Lib\+::\+I\+Notify\+::$\sim$\+I\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quantum_lib_1_1_i_notify_ab336885c5d718ed5bbe1eaab959bf880}\label{class_quantum_lib_1_1_i_notify_ab336885c5d718ed5bbe1eaab959bf880}} 
+\index{Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}!Alarm\+Data\+Changed@{Alarm\+Data\+Changed}}
+\index{Alarm\+Data\+Changed@{Alarm\+Data\+Changed}!Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}}
+\subsubsection{\texorpdfstring{Alarm\+Data\+Changed()}{AlarmDataChanged()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+I\+Notify\+::\+Alarm\+Data\+Changed (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{Serial\+Number,  }\item[{\mbox{\hyperlink{struct_quantum_lib_1_1_alarm_data__t}{Quantum\+Lib\+::\+Alarm\+Data\+\_\+t}} \&}]{r\+Alarm\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+This function is called for each new alarm that is genertaed by the system If multiple new alarms occur, the function is called multiple times 
+\begin{DoxyParams}{Parameters}
+{\em Serial\+Number} & Defines the scanner that the Alarm list applies too. \\
+\hline
+{\em r\+Alarm\+Data} & reference to alarm data structure defining the current Alarm \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_alarm_data__t}{Alarm\+Data\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_quantum_lib_1_1_i_notify_ae92378ad5ad3bdee002306a0723a5565}\label{class_quantum_lib_1_1_i_notify_ae92378ad5ad3bdee002306a0723a5565}} 
+\index{Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}!Feature\+Changed@{Feature\+Changed}}
+\index{Feature\+Changed@{Feature\+Changed}!Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}}
+\subsubsection{\texorpdfstring{Feature\+Changed()}{FeatureChanged()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+I\+Notify\+::\+Feature\+Changed (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{Serial\+Number,  }\item[{\mbox{\hyperlink{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777}{e\+Features\+\_\+t}}}]{Feature,  }\item[{bool}]{Supported }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Typically this function will only be called when the scanner is initially detected as the available Features do not change.~\newline
+ The function will be called for each Feature available. 
+\begin{DoxyParams}{Parameters}
+{\em Serial\+Number} & Defines the scanner that this Feature applies too. \\
+\hline
+{\em Feature} & defines the available feature \\
+\hline
+{\em Supported} & defines if the feature is supported \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_a10da739314e0c51341b3d5d059ead777}{e\+Features\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_quantum_lib_1_1_i_notify_a33dec2e67057bb72fd0a00dc4e001fb7}\label{class_quantum_lib_1_1_i_notify_a33dec2e67057bb72fd0a00dc4e001fb7}} 
+\index{Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}!Marpa\+Data\+Changed@{Marpa\+Data\+Changed}}
+\index{Marpa\+Data\+Changed@{Marpa\+Data\+Changed}!Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}}
+\subsubsection{\texorpdfstring{Marpa\+Data\+Changed()}{MarpaDataChanged()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+I\+Notify\+::\+Marpa\+Data\+Changed (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{Serial\+Number,  }\item[{\mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t}{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}} \&}]{r\+Marpa\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Serial\+Number} & Defines the scanner that the Marpa Data applies too. \\
+\hline
+{\em r\+Marpa\+Data} & reference to marpa data structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t}{Marpa\+Data\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_quantum_lib_1_1_i_notify_a884178a07e8f2143eb1511bee99a1e51}\label{class_quantum_lib_1_1_i_notify_a884178a07e8f2143eb1511bee99a1e51}} 
+\index{Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}!Parameter\+Changed@{Parameter\+Changed}}
+\index{Parameter\+Changed@{Parameter\+Changed}!Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}}
+\subsubsection{\texorpdfstring{Parameter\+Changed()}{ParameterChanged()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+I\+Notify\+::\+Parameter\+Changed (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{Serial\+Number,  }\item[{\mbox{\hyperlink{namespace_quantum_lib_a7fefffa3a6029981b52ea03463b6255c}{Quantum\+Lib\+::e\+Parameters\+\_\+t}}}]{Parameter,  }\item[{uint32\+\_\+t}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+This function is called on initialisation.~\newline
+Parameters specify the Minimum and Maximum Range Index available on the scanner and the Maximum number of Marpa Targets that can be acquired by the scanner.~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em Serial\+Number} & Defines the scanner that this Parameter applies too. \\
+\hline
+{\em Parameter} & Index of the new parameter \\
+\hline
+{\em Value} & Value of the new parameter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_quantum_lib_1_1_i_notify_a5b91aeecff71a2232cddf73199cc0213}\label{class_quantum_lib_1_1_i_notify_a5b91aeecff71a2232cddf73199cc0213}} 
+\index{Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}!Scanner\+List\+Changed@{Scanner\+List\+Changed}}
+\index{Scanner\+List\+Changed@{Scanner\+List\+Changed}!Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}}
+\subsubsection{\texorpdfstring{Scanner\+List\+Changed()}{ScannerListChanged()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+I\+Notify\+::\+Scanner\+List\+Changed (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Called whenever a scanner is added or removed from the system. 
+\begin{DoxyParams}{Parameters}
+{\em count} & number of scanners detecetd in the system \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_quantum_lib_1_1_i_notify_aa7224861ce088af10d5b471d9550bb21}\label{class_quantum_lib_1_1_i_notify_aa7224861ce088af10d5b471d9550bb21}} 
+\index{Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}!Setting\+Changed@{Setting\+Changed}}
+\index{Setting\+Changed@{Setting\+Changed}!Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}}
+\subsubsection{\texorpdfstring{Setting\+Changed()}{SettingChanged()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+I\+Notify\+::\+Setting\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_quantum_lib_1_1_setting_data__t}{Quantum\+Lib\+::\+Setting\+Data\+\_\+t}} \&}]{r\+Setting\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Called each time a setting in the scanner has been altered. 
+\begin{DoxyParams}{Parameters}
+{\em r\+Setting\+Data} & reference to a \mbox{\hyperlink{struct_quantum_lib_1_1_setting_data__t}{Setting\+Data\+\_\+t}} structure defining the Setting changed in the Radar and its new value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_setting_data__t}{Setting\+Data\+\_\+t}} 
+
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54c}{e\+Settings\+\_\+t}} 
+
+\mbox{\hyperlink{namespace_quantum_lib_ad62fc36ad3cd7ee810cbfc545d04ea9c}{e\+Channel\+\_\+t}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_quantum_lib_1_1_i_notify_a5e4b6945d8009cc8f820353237ef489c}\label{class_quantum_lib_1_1_i_notify_a5e4b6945d8009cc8f820353237ef489c}} 
+\index{Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}!Spoke\+Data\+Received@{Spoke\+Data\+Received}}
+\index{Spoke\+Data\+Received@{Spoke\+Data\+Received}!Quantum\+Lib\+::\+I\+Notify@{Quantum\+Lib\+::\+I\+Notify}}
+\subsubsection{\texorpdfstring{Spoke\+Data\+Received()}{SpokeDataReceived()}}
+{\footnotesize\ttfamily Quantum\+Lib\+::\+I\+Notify\+::\+Spoke\+Data\+Received (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{Serial\+Number,  }\item[{\mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t}{Spoke\+Data\+\_\+t}} \&}]{r\+Spoke\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Called for each spoke of data received. 
+\begin{DoxyParams}{Parameters}
+{\em Serial\+Number} & Defines the scanner that Spoke Data was received from. \\
+\hline
+{\em r\+Spoke\+Data} & Reference to the Spoke\+Data structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t}{Spoke\+Data\+\_\+t}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\mbox{\hyperlink{_quantum_lib_8h}{Quantum\+Lib.\+h}}\end{DoxyCompactItemize}

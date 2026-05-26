@@ -1,0 +1,19 @@
+The Quantum S\+DK is a library of functions providing an interface between a Client Application and the Quantum Radar.~\newline
+ The A\+PI provides callback functions giving the current status of the Radar, Spoke Data, Marpa Target Data and Alarm information.~\newline
+The A\+PI also allow messages to be sent to the Quantum Radar to control the Radars Parameters and Settings.~\newline
+ The S\+DK provides example programs that are compiled and ready to run.~\newline
+The example programs have been built using Visual Studio 2017 and the solution files and source code are supplied with the S\+DK.~\newline
+The example source code may be re-\/used and/or modified for third party applications.~\newline
+\hypertarget{index_Copyright}{}\section{Copyright Notice}\label{index_Copyright}
+Copyright (C) 2018, 2019 Raymarine -\/ All Rights Reserved.~\newline
+You may use, distribute and modify this code under the terms of the Raymarine Radar S\+DK License Agreement.~\newline
+You should have received a copy of the Raymarine Radar S\+DK License Agreement with this file. If not, please contact Raymarine.~\newline
+\hypertarget{index_Network}{}\section{Network Settings}\label{index_Network}
+\hypertarget{index_Address}{}\subsection{I\+P Address}\label{index_Address}
+The Quantum Radar works with an IP address in the range 10.\+0.\+x.\+x to 10.\+31.\+x.\+x with a subnet mask opf 255.\+224.\+0.\+0 ~\newline
+\hypertarget{index_Server}{}\subsection{D\+H\+C\+P Server}\label{index_Server}
+The IP address is assigned to the Quantum Radar by a D\+H\+CP server, the host system must therefore run a D\+H\+CP server.~\newline
+\hypertarget{index_Protocol}{}\section{Quantum Protocol}\label{index_Protocol}
+The protocol between the host system and the Quantum Radar allows for multiple displays to control and display data from the Radar.~\newline
+When a host sends a command to the Radar to change a parameter, it must receive the appropriate notification message to validate that the parameter has been set correctly. ~\newline
+This validation process will ensure the integrity of settings between the Quantum Radar and all connected host systems.~\newline

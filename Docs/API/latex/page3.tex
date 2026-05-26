@@ -1,0 +1,34 @@
+\hypertarget{page3_SettingData}{}\section{Setting\+Data\+\_\+t}\label{page3_SettingData}
+\hypertarget{page3_Control}{}\subsection{Using Setting\+Data\+\_\+t to control the scanner}\label{page3_Control}
+To send a command to the scanner, the Setting\+Data\+\_\+t structure should be created by calling the Setting\+Data\+\_\+t constructor with the setting value and the serial number of the scanner.~\newline
+The Set\+Value() method of the Setting\+Data\+\_\+t structure should then be called with the appropriate type.\+The Set\+Value() method contains a number of overloaded functions and verifies the parameter type against the setting supplied in the constructor.~\newline
+The Is\+Valid() method of the Setting\+Data\+\_\+t structure will return false if the Setting and Value do not match.~\newline
+For Example, to set the Radar(with Serial\+Number 0x12345678) to Transmit Mode~\newline
+Setting\+Data\+\_\+t Setting(e\+Radar\+Mode, 0x12345678);~\newline
+Setting.\+Set\+Value(e\+Radar\+Mode\+Transmitting);~\newline
+If(Setting.\+Is\+Valid() == true)~\newline
+\{~\newline
+ bool ret = Quantum\+Lib\+::\+A\+P\+I\+::\+New\+Scanner\+Setting(\+Setting);~\newline
+\}~\newline
+\hypertarget{page3_Notify}{}\subsection{Using Setting\+Data\+\_\+t to receive notifications from the scanner}\label{page3_Notify}
+The Setting\+Data\+\_\+t structure is by the application program to receive setting change notification messages from the library.~\newline
+The Get\+Setting() method of the Setting\+Data\+\_\+t structure can be used to determine the setting.~\newline
+The Get\+Value() method of the Setting\+Data\+\_\+t structure should then be called with the appropriate type to read the new setting value.\+The Get\+Value() method contains a number of overloaded functions and verifies the parameter type against the setting.~\newline
+The Is\+Valid() method of the Setting\+Data\+\_\+t structure will return false if the Get\+Value() method has been called with a type that does not match the setting.~\newline
+For example~\newline
+void Quantum\+App\+::\+Setting\+Changed(\+Quantum\+Lib\+::\+Setting\+Data\+\_\+t\& r\+Setting)~\newline
+\{~\newline
+If(r\+Setting.\+Get\+Setting() == \mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca979ebf5f13199739e12a44ae3a7d7596}{Quantum\+Lib\+::e\+Setting\+Radar\+Mode}})~\newline
+\{~\newline
+ \mbox{\hyperlink{namespace_quantum_lib_ade0390db62ad71cd1a56b97245d00619}{Quantum\+Lib\+::e\+Radar\+Mode\+\_\+t}} Radar\+Mode;~\newline
+ r\+Setting.\+Get\+Value(\+Radar\+Mode);~\newline
+ If(r\+Setting.\+Is\+Valid() == true)~\newline
+ \{~\newline
+ // update application with new Radar\+Mode value~\newline
+ \}~\newline
+ else~\newline
+ \{~\newline
+ // log error~\newline
+ \}~\newline
+ \}~\newline
+\}~\newline

@@ -1,0 +1,101 @@
+\hypertarget{class_quantum_lib_debug}{}\section{Quantum\+Lib\+Debug Class Reference}
+\label{class_quantum_lib_debug}\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}
+
+
+{\ttfamily \#include $<$Quantum\+Lib\+Debug.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7}{e\+Debug\+Output\+\_\+t}} \{ \mbox{\hyperlink{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7a9d690393603a0b15640bd9fd031d707c}{e\+Debug\+Output\+None}} = 0, 
+\mbox{\hyperlink{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7ae2c700174e804a4cfd9c657ecac337c4}{e\+Debug\+Output\+Console}} = 1, 
+\mbox{\hyperlink{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7ac72ddecd23f70d34ed2445e05b33006a}{e\+Debug\+Output\+Visual\+Studio}} = 2, 
+\mbox{\hyperlink{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7ad2f92e5949ddf18ceba61b355859a64c}{e\+Debug\+Output\+File}} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_quantum_lib_debug_ae6b98a812d918c08cfc99a6113a3c9db}{Quantum\+Lib\+Debug}} ()
+\item 
+\mbox{\hyperlink{class_quantum_lib_debug_a176c88bb82e04d8ffe9a65ab56463fd1}{$\sim$\+Quantum\+Lib\+Debug}} ()
+\item 
+void \mbox{\hyperlink{class_quantum_lib_debug_aeb109d90f04802c183d0c41037094d17}{Initialise}} ()
+\item 
+void \mbox{\hyperlink{class_quantum_lib_debug_a3baba026471b16a53e182ac61d1daa27}{Output\+String}} (\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3}{e\+Debug\+Level\+\_\+t}} level, char $\ast$Debug\+Str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to handle debug output from Quantum\+Lib.\+D\+LL.~\newline
+The level of debug output and the output device can be specified from the configuration file Quantum\+Lib\+Debug.\+Cfg~\newline
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7}{e\+Debug\+Output\+\_\+t}} 
+
+\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3}{e\+Debug\+Level\+\_\+t}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7}\label{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7}} 
+\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}!e\+Debug\+Output\+\_\+t@{e\+Debug\+Output\+\_\+t}}
+\index{e\+Debug\+Output\+\_\+t@{e\+Debug\+Output\+\_\+t}!Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}
+\subsubsection{\texorpdfstring{e\+Debug\+Output\+\_\+t}{eDebugOutput\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7}{Quantum\+Lib\+Debug\+::e\+Debug\+Output\+\_\+t}}}
+
+Directs the output to the specified stream \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Output\+None@{e\+Debug\+Output\+None}!Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}!e\+Debug\+Output\+None@{e\+Debug\+Output\+None}}}\mbox{\Hypertarget{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7a9d690393603a0b15640bd9fd031d707c}\label{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7a9d690393603a0b15640bd9fd031d707c}} 
+e\+Debug\+Output\+None&No Debug output. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Output\+Console@{e\+Debug\+Output\+Console}!Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}!e\+Debug\+Output\+Console@{e\+Debug\+Output\+Console}}}\mbox{\Hypertarget{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7ae2c700174e804a4cfd9c657ecac337c4}\label{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7ae2c700174e804a4cfd9c657ecac337c4}} 
+e\+Debug\+Output\+Console&Debug oputput uses printf to send to a console window. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Output\+Visual\+Studio@{e\+Debug\+Output\+Visual\+Studio}!Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}!e\+Debug\+Output\+Visual\+Studio@{e\+Debug\+Output\+Visual\+Studio}}}\mbox{\Hypertarget{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7ac72ddecd23f70d34ed2445e05b33006a}\label{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7ac72ddecd23f70d34ed2445e05b33006a}} 
+e\+Debug\+Output\+Visual\+Studio&Debug Output is directed to the Output window in Visual Studio. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Output\+File@{e\+Debug\+Output\+File}!Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}!e\+Debug\+Output\+File@{e\+Debug\+Output\+File}}}\mbox{\Hypertarget{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7ad2f92e5949ddf18ceba61b355859a64c}\label{class_quantum_lib_debug_a02246b73828eeaee6859743af47523c7ad2f92e5949ddf18ceba61b355859a64c}} 
+e\+Debug\+Output\+File&debug output is directed to the file specified in \char`\"{}\+Quantum\+Lib\+Debug.\+Cfg\char`\"{} \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_quantum_lib_debug_ae6b98a812d918c08cfc99a6113a3c9db}\label{class_quantum_lib_debug_ae6b98a812d918c08cfc99a6113a3c9db}} 
+\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}!Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}
+\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}!Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}
+\subsubsection{\texorpdfstring{Quantum\+Lib\+Debug()}{QuantumLibDebug()}}
+{\footnotesize\ttfamily Quantum\+Lib\+Debug\+::\+Quantum\+Lib\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialise parameters for no output.~\newline
+ \mbox{\Hypertarget{class_quantum_lib_debug_a176c88bb82e04d8ffe9a65ab56463fd1}\label{class_quantum_lib_debug_a176c88bb82e04d8ffe9a65ab56463fd1}} 
+\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}!````~Quantum\+Lib\+Debug@{$\sim$\+Quantum\+Lib\+Debug}}
+\index{````~Quantum\+Lib\+Debug@{$\sim$\+Quantum\+Lib\+Debug}!Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}
+\subsubsection{\texorpdfstring{$\sim$\+Quantum\+Lib\+Debug()}{~QuantumLibDebug()}}
+{\footnotesize\ttfamily Quantum\+Lib\+Debug\+::$\sim$\+Quantum\+Lib\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close the debug output file. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_quantum_lib_debug_aeb109d90f04802c183d0c41037094d17}\label{class_quantum_lib_debug_aeb109d90f04802c183d0c41037094d17}} 
+\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}!Initialise@{Initialise}}
+\index{Initialise@{Initialise}!Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}
+\subsubsection{\texorpdfstring{Initialise()}{Initialise()}}
+{\footnotesize\ttfamily void Quantum\+Lib\+Debug\+::\+Initialise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads the configuration file Quantum\+Lib\+Debug.\+Cfg and sets the appropriate debug options opening the output file if required.~\newline
+If no configuration file is found, no output is produced.~\newline
+ \mbox{\Hypertarget{class_quantum_lib_debug_a3baba026471b16a53e182ac61d1daa27}\label{class_quantum_lib_debug_a3baba026471b16a53e182ac61d1daa27}} 
+\index{Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}!Output\+String@{Output\+String}}
+\index{Output\+String@{Output\+String}!Quantum\+Lib\+Debug@{Quantum\+Lib\+Debug}}
+\subsubsection{\texorpdfstring{Output\+String()}{OutputString()}}
+{\footnotesize\ttfamily void Quantum\+Lib\+Debug\+::\+Output\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3}{e\+Debug\+Level\+\_\+t}}}]{level,  }\item[{char $\ast$}]{Debug\+Str }\end{DoxyParamCaption})}
+
+Writes debug to output stream 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\mbox{\hyperlink{_quantum_lib_debug_8h}{Quantum\+Lib\+Debug.\+h}}\end{DoxyCompactItemize}

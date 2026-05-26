@@ -1,0 +1,35 @@
+\hypertarget{page1_build}{}\section{Building the examples}\label{page1_build}
+There are three example programs supplied with the Quantum S\+DK.~\newline
+The applications have been built using Visual Studio 2017 for win32 and x64.~\newline
+Quantum\+Client -\/ windows console based application showing notification messages from the scanner and allowing user modification of settings from a command line interface.~\newline
+Quantum\+Client\+Dialog -\/ windows application showing notification messages from the scanner, alarm messages, marpa data and allowing user modification of settings from a command line interface.~\newline
+Quantum\+Client\+P\+PI -\/ windows based application that can display a P\+PI image using DirectX 9.~\newline
+~\newline
+32 bit versions of the Compiled library files and compiled versions of the example programs are installed at \+: -\/~\newline
+\{Install\+Dir\}/\+Ouput/\+Debug\+\_\+\+Win32~\newline
+\{Install\+Dir\}/\+Ouput/\+Release\+\_\+\+Win32~\newline
+~\newline
+64 bit versions of the Compiled library files and compiled versions of the example programs are installed at \+: -\/~\newline
+\{Install\+Dir\}/\+Ouput/\+Debug\+\_\+x64~\newline
+\{Install\+Dir\}/\+Ouput/\+Release\+\_\+x64~\newline
+~\newline
+N\+O\+TE\+:~\newline
+Installation of the x86 version of the Microsoft VC redistribution libraries may be required to run the Win32 example programs.~\newline
+Installation of the x64 version of the Microsoft VC redistribution libraries may be required to run the x64 example programs.~\newline
+Installation of the DirectX redistribution libraries may be required to run the Win32 P\+PI example programs.~\newline
+There is no 64 bit version of the P\+PI example program.~\newline
+\hypertarget{page1_cli}{}\subsection{Command Line}\label{page1_cli}
+The command line interpreter is a basic command line allowing the user to set radar parameters~\newline
+\hypertarget{page1_syntax}{}\subsection{Syntax}\label{page1_syntax}
+$<$\+Scanner\+Index$>$, $<$\+Setting$>$, $<$param1$>$ \mbox{[},param2, .... ,$<$paramn$>$\mbox{]}~\newline
+All values entered are numerical where ~\newline
+$<$\+Scanner\+Index$>$ is the index of the scanner that is shown in the Scanner List window~\newline
+$<$\+Setting$>$ is the enumerted value of the setting from e\+\_\+\+Setting\+\_\+t~\newline
+$<$param1 .. n$>$ value(s) to sent with the command~\newline
+\hypertarget{page1_examples}{}\subsection{Examples}\label{page1_examples}
+0,1,1 ; Set Radar Mode to 1 (transmitting)~\newline
+0,1,0 ; Set Radar Mode to 0 (standby)~\newline
+0,20,5 ; set range index 5 (1/2 nm range)~\newline
+0,22,0 ; set Gain Mode Manual~\newline
+0,23,90 ; Set Gain value 90\%~\newline
+0,62,750,175 ; acquire marpa target at 750 metres, bearing 175 degrees~\newline

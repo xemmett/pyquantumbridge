@@ -1,0 +1,51 @@
+\hypertarget{struct_quantum_lib_1_1_marpa_setup__t}{}\section{Quantum\+Lib\+:\+:Marpa\+Setup\+\_\+t Struct Reference}
+\label{struct_quantum_lib_1_1_marpa_setup__t}\index{Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t}}
+
+
+{\ttfamily \#include $<$Quantum\+Lib\+Types.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_setup__t_a6d2e136a87beafb7d3c6df389405ef28}{Safe\+Zone\+Distance\+\_\+metres}}
+\begin{DoxyCompactList}\small\item\em Safe Zone Distance in metres. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_setup__t_ab50c2eea7b489bc3933a60d0c896b836}{Time\+To\+Safe\+Zone\+\_\+secs}}
+\begin{DoxyCompactList}\small\item\em Time to Safe Zone in seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parameters for generating dangerous target alarms.~\newline
+A target is marked as dangerous for the following conditions.~\newline
+If Targets relative speed is towards own vessel and Target is currently in safe zone.~\newline
+If Targets relative speed is towards own vessel and C\+PA is within in the \textquotesingle{}Safe\+Zone\+Distance\textquotesingle{} and T\+C\+PA is less than the \textquotesingle{}Time\+To\+Safe\+Zone\textquotesingle{}.~\newline
+If Targets relative speed is towards own vessel and Target is within the \textquotesingle{}Safe\+Zone\+Distance\textquotesingle{} after \textquotesingle{}Time\+To\+Safe\+Zone\textquotesingle{} seconds. (Target will not its C\+PA until after Time\+To\+Safe\+Zone seconds) \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54cae0da3a53a8abab02dfaeebb7f79f2840}{e\+Setting\+Marpa\+Setup}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_setup__t_a6d2e136a87beafb7d3c6df389405ef28}\label{struct_quantum_lib_1_1_marpa_setup__t_a6d2e136a87beafb7d3c6df389405ef28}} 
+\index{Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t}!Safe\+Zone\+Distance\+\_\+metres@{Safe\+Zone\+Distance\+\_\+metres}}
+\index{Safe\+Zone\+Distance\+\_\+metres@{Safe\+Zone\+Distance\+\_\+metres}!Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t}}
+\subsubsection{\texorpdfstring{Safe\+Zone\+Distance\+\_\+metres}{SafeZoneDistance\_metres}}
+{\footnotesize\ttfamily uint32\+\_\+t Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t\+::\+Safe\+Zone\+Distance\+\_\+metres}
+
+
+
+Safe Zone Distance in metres. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_setup__t_ab50c2eea7b489bc3933a60d0c896b836}\label{struct_quantum_lib_1_1_marpa_setup__t_ab50c2eea7b489bc3933a60d0c896b836}} 
+\index{Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t}!Time\+To\+Safe\+Zone\+\_\+secs@{Time\+To\+Safe\+Zone\+\_\+secs}}
+\index{Time\+To\+Safe\+Zone\+\_\+secs@{Time\+To\+Safe\+Zone\+\_\+secs}!Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t}}
+\subsubsection{\texorpdfstring{Time\+To\+Safe\+Zone\+\_\+secs}{TimeToSafeZone\_secs}}
+{\footnotesize\ttfamily uint32\+\_\+t Quantum\+Lib\+::\+Marpa\+Setup\+\_\+t\+::\+Time\+To\+Safe\+Zone\+\_\+secs}
+
+
+
+Time to Safe Zone in seconds. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\mbox{\hyperlink{_quantum_lib_types_8h}{Quantum\+Lib\+Types.\+h}}\end{DoxyCompactItemize}

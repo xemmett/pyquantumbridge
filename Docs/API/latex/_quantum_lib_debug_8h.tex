@@ -1,0 +1,100 @@
+\hypertarget{_quantum_lib_debug_8h}{}\section{C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\+Quantum\+Lib\+Debug.h File Reference}
+\label{_quantum_lib_debug_8h}\index{C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\+Quantum\+Lib\+Debug.\+h@{C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\+Quantum\+Lib\+Debug.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_quantum_lib_debug}{Quantum\+Lib\+Debug}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3}{e\+Debug\+Level\+\_\+t}} \{ \newline
+\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a2ec4c9998150adf357128b8894bf4560}{e\+Debug\+Level\+None}} = 0, 
+\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a8f6dfdc37e381c0e50264f6fb071a9c3}{e\+Debug\+Level\+Failure}} = 1, 
+\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3ad7f5fd7835687ffe33c61f0b4f50a2e8}{e\+Debug\+Level\+Ethernet}} = 2, 
+\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3abf29705cd6d1252172732fb60690c3bf}{e\+Debug\+Level\+Control}} = 3, 
+\newline
+\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3ac314dbf0041aae71a0563731dd3c7f0b}{e\+Debug\+Level\+Marpa}} = 4, 
+\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a5fda03f6c1091000e33f6c90b264781b}{e\+Debug\+Level\+System\+Pkts}} = 5, 
+\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3ac111546bd6e347be01d2a6e235fe6fba}{e\+Debug\+Level\+Radar\+Pkts}} = 6, 
+\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a3cb6c0aaf34a79333936aef60f018f3f}{e\+Debug\+Level\+Max}} = e\+Debug\+Level\+Radar\+Pkts
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_quantum_lib_debug_8h_a8461dc2d6ce435bd5759b14fb2c7f7ff}{D\+E\+B\+U\+G\+\_\+\+T\+R\+A\+CE}} (\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3}{e\+Debug\+Level\+\_\+t}} level, const char $\ast$fmt,...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Enables Debug Output from \mbox{\hyperlink{namespace_quantum_lib}{Quantum\+Lib}} D\+LL.~\newline
+Debug Output can be directed to a console window (using printf), Visual Studio Output Window (using Output\+Debug\+String) or File (using fprintf).~\newline
+Debug Output is directed using the enumerted type e\+Debug\+Output\+\_\+t.~\newline
+The level of output can also be configured enumerated type e\+Debug\+Level\+\_\+t.~\newline
+By default Debug Output is turned off .~\newline
+Configuration File Quantum\+Lib\+Debug.\+Cfg has the following format.~\newline
+Filename\+: Quantum\+Lib\+Debug\+Output.\+Txt~\newline
+Output \+: 0~\newline
+Level \+: 0~\newline
+ 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3}\label{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3}} 
+\index{Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}!e\+Debug\+Level\+\_\+t@{e\+Debug\+Level\+\_\+t}}
+\index{e\+Debug\+Level\+\_\+t@{e\+Debug\+Level\+\_\+t}!Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}}
+\subsubsection{\texorpdfstring{e\+Debug\+Level\+\_\+t}{eDebugLevel\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3}{e\+Debug\+Level\+\_\+t}}}
+
+Copyright (C) 2018, 2019 Raymarine -\/ All Rights Reserved.~\newline
+You may use, distribute and modify this code under the terms of the Raymarine Radar S\+DK License Agreement.~\newline
+You should have received a copy of the Raymarine Radar S\+DK License Agreement with this file. If not, please contact Raymarine.~\newline
+ ~\newline
+sets the level of debug output required. Setting a value output all messages of that level and lower levels.~\newline
+Setting level = e\+Debug\+Level\+Failure produces the minimum amount of debug output.~\newline
+Setting level = e\+Debug\+Level\+Radar\+Pkts outputs all debug messages.~\newline
+ \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Level\+None@{e\+Debug\+Level\+None}!Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}}\index{Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}!e\+Debug\+Level\+None@{e\+Debug\+Level\+None}}}\mbox{\Hypertarget{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a2ec4c9998150adf357128b8894bf4560}\label{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a2ec4c9998150adf357128b8894bf4560}} 
+e\+Debug\+Level\+None&No debug messages are output. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Level\+Failure@{e\+Debug\+Level\+Failure}!Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}}\index{Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}!e\+Debug\+Level\+Failure@{e\+Debug\+Level\+Failure}}}\mbox{\Hypertarget{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a8f6dfdc37e381c0e50264f6fb071a9c3}\label{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a8f6dfdc37e381c0e50264f6fb071a9c3}} 
+e\+Debug\+Level\+Failure&Failure messages, can\textquotesingle{}t create class, sockets ... \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Level\+Ethernet@{e\+Debug\+Level\+Ethernet}!Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}}\index{Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}!e\+Debug\+Level\+Ethernet@{e\+Debug\+Level\+Ethernet}}}\mbox{\Hypertarget{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3ad7f5fd7835687ffe33c61f0b4f50a2e8}\label{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3ad7f5fd7835687ffe33c61f0b4f50a2e8}} 
+e\+Debug\+Level\+Ethernet&Ethernet Messages, creating threads, opening sockets, binding ports ... \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Level\+Control@{e\+Debug\+Level\+Control}!Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}}\index{Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}!e\+Debug\+Level\+Control@{e\+Debug\+Level\+Control}}}\mbox{\Hypertarget{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3abf29705cd6d1252172732fb60690c3bf}\label{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3abf29705cd6d1252172732fb60690c3bf}} 
+e\+Debug\+Level\+Control&Control parameter messages sent to radar. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Level\+Marpa@{e\+Debug\+Level\+Marpa}!Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}}\index{Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}!e\+Debug\+Level\+Marpa@{e\+Debug\+Level\+Marpa}}}\mbox{\Hypertarget{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3ac314dbf0041aae71a0563731dd3c7f0b}\label{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3ac314dbf0041aae71a0563731dd3c7f0b}} 
+e\+Debug\+Level\+Marpa&Marpa and Alarm Notification messages. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Level\+System\+Pkts@{e\+Debug\+Level\+System\+Pkts}!Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}}\index{Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}!e\+Debug\+Level\+System\+Pkts@{e\+Debug\+Level\+System\+Pkts}}}\mbox{\Hypertarget{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a5fda03f6c1091000e33f6c90b264781b}\label{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a5fda03f6c1091000e33f6c90b264781b}} 
+e\+Debug\+Level\+System\+Pkts&Received System Packets Unit\+Info, Service Info. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Level\+Radar\+Pkts@{e\+Debug\+Level\+Radar\+Pkts}!Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}}\index{Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}!e\+Debug\+Level\+Radar\+Pkts@{e\+Debug\+Level\+Radar\+Pkts}}}\mbox{\Hypertarget{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3ac111546bd6e347be01d2a6e235fe6fba}\label{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3ac111546bd6e347be01d2a6e235fe6fba}} 
+e\+Debug\+Level\+Radar\+Pkts&Received Radar Packets. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{e\+Debug\+Level\+Max@{e\+Debug\+Level\+Max}!Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}}\index{Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}!e\+Debug\+Level\+Max@{e\+Debug\+Level\+Max}}}\mbox{\Hypertarget{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a3cb6c0aaf34a79333936aef60f018f3f}\label{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3a3cb6c0aaf34a79333936aef60f018f3f}} 
+e\+Debug\+Level\+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_quantum_lib_debug_8h_a8461dc2d6ce435bd5759b14fb2c7f7ff}\label{_quantum_lib_debug_8h_a8461dc2d6ce435bd5759b14fb2c7f7ff}} 
+\index{Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}!D\+E\+B\+U\+G\+\_\+\+T\+R\+A\+CE@{D\+E\+B\+U\+G\+\_\+\+T\+R\+A\+CE}}
+\index{D\+E\+B\+U\+G\+\_\+\+T\+R\+A\+CE@{D\+E\+B\+U\+G\+\_\+\+T\+R\+A\+CE}!Quantum\+Lib\+Debug.\+h@{Quantum\+Lib\+Debug.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+T\+R\+A\+C\+E()}{DEBUG\_TRACE()}}
+{\footnotesize\ttfamily void D\+E\+B\+U\+G\+\_\+\+T\+R\+A\+CE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_quantum_lib_debug_8h_a2f13c7df267567b446dbccb2746149f3}{e\+Debug\+Level\+\_\+t}}}]{level,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+

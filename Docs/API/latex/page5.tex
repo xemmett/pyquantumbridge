@@ -1,0 +1,25 @@
+\hypertarget{page5_Debug}{}\section{Debug Options}\label{page5_Debug}
+\hypertarget{page5_File}{}\subsection{Debug Configuration File}\label{page5_File}
+The Debug information can be configured from a configuration file Quantum\+Lib\+Debug.\+cfg which should be placed in the directory with the Quantum\+Lib.\+D\+LL and the application executable file.~\newline
+The configuration file allows output to be directed to the console or a file.~\newline
+The level of debug output may also be specified.~\newline
+Example Quantum\+Lib\+Debug.\+cfg File.~\newline
+Filename\+: Q\+Debug.\+Txt~\newline
+Output\+: 3~\newline
+Level\+: 2~\newline
+\hypertarget{page5_Output}{}\subsection{Debug Output}\label{page5_Output}
+Debug output can be directed to one of three possible output devices.~\newline
+0 -\/ No Output~\newline
+1 -\/ Output to console window in a Win32 console application~\newline
+2 -\/ Output to console tab in visual studio~\newline
+3 -\/ Output to file~\newline
+\hypertarget{page5_Level}{}\subsection{Debug Level}\label{page5_Level}
+Debug output can be configured to provide different levels of configuration information. 6 levels of debug output are provided, Level 1 giving the most concise debug information and level 6 the most verbose.~\newline
+0 -\/ No debug messages are output.~\newline
+1 -\/ Failure and Error messages, can\textquotesingle{}t create class, sockets ...~\newline
+2 -\/ Ethernet Messages, creating threads, opening sockets, binding ports ...~\newline
+3 -\/ Control parameter messages sent to radar~\newline
+4 -\/ Marpa and Alarm Notification messages~\newline
+5 -\/ Received System Packets Unit Info, Service Info~\newline
+6 -\/ Received Radar Packets, logs the serial number and message Id for all messages received from the Radar~\newline
+ 

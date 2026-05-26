@@ -1,0 +1,100 @@
+\hypertarget{struct_quantum_lib_1_1_spoke_data__t}{}\section{Quantum\+Lib\+:\+:Spoke\+Data\+\_\+t Struct Reference}
+\label{struct_quantum_lib_1_1_spoke_data__t}\index{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}}
+
+
+{\ttfamily \#include $<$Quantum\+Lib\+Types.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t_afa2843600eaccb38db739a8bd7e468dd}{Samples\+Per\+Spoke}}
+\begin{DoxyCompactList}\small\item\em count of samples in each spoke \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t_abca160974e76a8a333a1927d1896fc69}{Spokes\+Per\+Scan}}
+\begin{DoxyCompactList}\small\item\em count of spokes in each scan \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t_a235bdd0acf5a02fe888939c909de9566}{Channel}}
+\begin{DoxyCompactList}\small\item\em 0-\/\+Default or 1st Range in Dual Range mode 1-\/ 2nd Range in Dual Range Mode \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t_a80aba4b609583225f67ab517f2962be5}{Instrumented\+Range}}
+\begin{DoxyCompactList}\small\item\em sample offset representing instrumented range \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t_a591b1e8718daebd744cf8480f7776730}{Bearing}}
+\begin{DoxyCompactList}\small\item\em 0-\/2047 \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t_ae92e5c137923fd5a8ff4f0fbbe0dbbaf}{Data\+Length}}
+\begin{DoxyCompactList}\small\item\em initially used by app layer, but may be modified by transport layer (e.\+g. if data is compressed) \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_spoke_data__t_ad37442613255475db25e2abf2691ee09}{Spoke\+Data}} \mbox{[}c\+Samples\+Per\+Spoke\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Spoke Data and header information 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_quantum_lib_1_1_spoke_data__t_a591b1e8718daebd744cf8480f7776730}\label{struct_quantum_lib_1_1_spoke_data__t_a591b1e8718daebd744cf8480f7776730}} 
+\index{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}!Bearing@{Bearing}}
+\index{Bearing@{Bearing}!Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Bearing}{Bearing}}
+{\footnotesize\ttfamily uint16\+\_\+t Quantum\+Lib\+::\+Spoke\+Data\+\_\+t\+::\+Bearing}
+
+
+
+0-\/2047 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_spoke_data__t_a235bdd0acf5a02fe888939c909de9566}\label{struct_quantum_lib_1_1_spoke_data__t_a235bdd0acf5a02fe888939c909de9566}} 
+\index{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}!Channel@{Channel}}
+\index{Channel@{Channel}!Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Channel}{Channel}}
+{\footnotesize\ttfamily uint8\+\_\+t Quantum\+Lib\+::\+Spoke\+Data\+\_\+t\+::\+Channel}
+
+
+
+0-\/\+Default or 1st Range in Dual Range mode 1-\/ 2nd Range in Dual Range Mode 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_spoke_data__t_ae92e5c137923fd5a8ff4f0fbbe0dbbaf}\label{struct_quantum_lib_1_1_spoke_data__t_ae92e5c137923fd5a8ff4f0fbbe0dbbaf}} 
+\index{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}!Data\+Length@{Data\+Length}}
+\index{Data\+Length@{Data\+Length}!Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Data\+Length}{DataLength}}
+{\footnotesize\ttfamily uint16\+\_\+t Quantum\+Lib\+::\+Spoke\+Data\+\_\+t\+::\+Data\+Length}
+
+
+
+initially used by app layer, but may be modified by transport layer (e.\+g. if data is compressed) 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_spoke_data__t_a80aba4b609583225f67ab517f2962be5}\label{struct_quantum_lib_1_1_spoke_data__t_a80aba4b609583225f67ab517f2962be5}} 
+\index{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}!Instrumented\+Range@{Instrumented\+Range}}
+\index{Instrumented\+Range@{Instrumented\+Range}!Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Instrumented\+Range}{InstrumentedRange}}
+{\footnotesize\ttfamily uint16\+\_\+t Quantum\+Lib\+::\+Spoke\+Data\+\_\+t\+::\+Instrumented\+Range}
+
+
+
+sample offset representing instrumented range 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_spoke_data__t_afa2843600eaccb38db739a8bd7e468dd}\label{struct_quantum_lib_1_1_spoke_data__t_afa2843600eaccb38db739a8bd7e468dd}} 
+\index{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}!Samples\+Per\+Spoke@{Samples\+Per\+Spoke}}
+\index{Samples\+Per\+Spoke@{Samples\+Per\+Spoke}!Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Samples\+Per\+Spoke}{SamplesPerSpoke}}
+{\footnotesize\ttfamily uint16\+\_\+t Quantum\+Lib\+::\+Spoke\+Data\+\_\+t\+::\+Samples\+Per\+Spoke}
+
+
+
+count of samples in each spoke 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_spoke_data__t_ad37442613255475db25e2abf2691ee09}\label{struct_quantum_lib_1_1_spoke_data__t_ad37442613255475db25e2abf2691ee09}} 
+\index{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}!Spoke\+Data@{Spoke\+Data}}
+\index{Spoke\+Data@{Spoke\+Data}!Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Spoke\+Data}{SpokeData}}
+{\footnotesize\ttfamily uint8\+\_\+t Quantum\+Lib\+::\+Spoke\+Data\+\_\+t\+::\+Spoke\+Data\mbox{[}c\+Samples\+Per\+Spoke\mbox{]}}
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_spoke_data__t_abca160974e76a8a333a1927d1896fc69}\label{struct_quantum_lib_1_1_spoke_data__t_abca160974e76a8a333a1927d1896fc69}} 
+\index{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}!Spokes\+Per\+Scan@{Spokes\+Per\+Scan}}
+\index{Spokes\+Per\+Scan@{Spokes\+Per\+Scan}!Quantum\+Lib\+::\+Spoke\+Data\+\_\+t@{Quantum\+Lib\+::\+Spoke\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Spokes\+Per\+Scan}{SpokesPerScan}}
+{\footnotesize\ttfamily uint16\+\_\+t Quantum\+Lib\+::\+Spoke\+Data\+\_\+t\+::\+Spokes\+Per\+Scan}
+
+
+
+count of spokes in each scan 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\mbox{\hyperlink{_quantum_lib_types_8h}{Quantum\+Lib\+Types.\+h}}\end{DoxyCompactItemize}

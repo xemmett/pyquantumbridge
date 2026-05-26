@@ -1,0 +1,106 @@
+\hypertarget{struct_quantum_lib_1_1_zone__t}{}\section{Quantum\+Lib\+:\+:Zone\+\_\+t Struct Reference}
+\label{struct_quantum_lib_1_1_zone__t}\index{Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}}
+
+
+{\ttfamily \#include $<$Quantum\+Lib\+Types.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_zone__t_abbb3333cca9fe0ba588ff587dd28a66a}{Start\+Range\+\_\+nm\+\_\+x1000}}
+\begin{DoxyCompactList}\small\item\em Start Range (inner radius) in Nautical Miles x 1000 (e.\+g. 1.\+5nm = 1500) \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_zone__t_a71ec031cf9d0cee829036d044b52d926}{End\+Range\+\_\+nm\+\_\+x1000}}
+\begin{DoxyCompactList}\small\item\em End Range in (outer Radius) Nautical Miles x 1000 (e.\+g. 1.\+5nm = 1500) \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_zone__t_aeee0428f3f061906525c2f694c2eff12}{Start\+Angle\+\_\+degs\+\_\+x10}}
+\begin{DoxyCompactList}\small\item\em Start Angle in degrees x 10 (e.\+g 359.\+4 degrees = 3954) \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_zone__t_ae00dbdd3360d76d3abe93a8fc8f3a4e0}{End\+Angle\+\_\+degs\+\_\+x10}}
+\begin{DoxyCompactList}\small\item\em Start Angle in degrees x 10 (e.\+g 359.\+4 degrees = 3954) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_quantum_lib_1_1_zone__t_a541618dd4336d68dc5ba58f04971e3e9}{Enable}}
+\begin{DoxyCompactList}\small\item\em Always set to \textquotesingle{}true\textquotesingle{} when setting a Guard Zone or Auto\+Acquire\+Zone. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_zone__t_a65300b62b7f60ed8427ea34cb650b773}{Id}}
+\begin{DoxyCompactList}\small\item\em 0 or 1. Supports 2 Guard Zones and/or 2 Auto Acquire Zones \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure specifies the parameters for a Guard Zone or an Auto Acquire Zone.~\newline
+A zone is specified as an inner and outer range and a start and end bearing.~\newline
+The start and end bearing are defined in degrees from the Own Ships Heading in a clockwise direction 0 to 360 degrees.~\newline
+When setting a Guard Zone or Auto Acquire Zone the \textquotesingle{}Enable\textquotesingle{} parameter is always set to \textquotesingle{}true\textquotesingle{}.~\newline
+When setting a Guard Zone or Auto Acquire Zone the \textquotesingle{}Id\textquotesingle{} parameter is defined by the value of e\+Setting\+\_\+t. (e\+Setting\+Guard\+Zone1, e\+Setting\+Guard\+Zone2, e\+Setting\+Auto\+Accquire\+Zone1, e\+Setting\+Auto\+Accquire\+Zone2). Guard Zones and Auto Acquire Zones should be enabled and disabled using the Guard\+Zone\+Enable and Auto\+Acquire\+Zone\+Enable messages.~\newline
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca9b2212b5d2855a4c2ea7333997ff63f7}{e\+Setting\+Guard\+Zone1}} 
+
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca310cbcc138ac9d7731a0b9256989aa3c}{e\+Setting\+Guard\+Zone2}} 
+
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca2b2bfab6ea7e4e63923519c6a34c3e19}{e\+Setting\+Auto\+Accquire\+Zone1}} 
+
+\mbox{\hyperlink{namespace_quantum_lib_acc8124e3e65bca4aa798d03a55e3d54ca07c900683db032067542bd1bcbcdc418}{e\+Setting\+Auto\+Accquire\+Zone2}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_quantum_lib_1_1_zone__t_a541618dd4336d68dc5ba58f04971e3e9}\label{struct_quantum_lib_1_1_zone__t_a541618dd4336d68dc5ba58f04971e3e9}} 
+\index{Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}!Enable@{Enable}}
+\index{Enable@{Enable}!Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}}
+\subsubsection{\texorpdfstring{Enable}{Enable}}
+{\footnotesize\ttfamily bool Quantum\+Lib\+::\+Zone\+\_\+t\+::\+Enable}
+
+
+
+Always set to \textquotesingle{}true\textquotesingle{} when setting a Guard Zone or Auto\+Acquire\+Zone. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_zone__t_ae00dbdd3360d76d3abe93a8fc8f3a4e0}\label{struct_quantum_lib_1_1_zone__t_ae00dbdd3360d76d3abe93a8fc8f3a4e0}} 
+\index{Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}!End\+Angle\+\_\+degs\+\_\+x10@{End\+Angle\+\_\+degs\+\_\+x10}}
+\index{End\+Angle\+\_\+degs\+\_\+x10@{End\+Angle\+\_\+degs\+\_\+x10}!Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}}
+\subsubsection{\texorpdfstring{End\+Angle\+\_\+degs\+\_\+x10}{EndAngle\_degs\_x10}}
+{\footnotesize\ttfamily uint32\+\_\+t Quantum\+Lib\+::\+Zone\+\_\+t\+::\+End\+Angle\+\_\+degs\+\_\+x10}
+
+
+
+Start Angle in degrees x 10 (e.\+g 359.\+4 degrees = 3954) 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_zone__t_a71ec031cf9d0cee829036d044b52d926}\label{struct_quantum_lib_1_1_zone__t_a71ec031cf9d0cee829036d044b52d926}} 
+\index{Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}!End\+Range\+\_\+nm\+\_\+x1000@{End\+Range\+\_\+nm\+\_\+x1000}}
+\index{End\+Range\+\_\+nm\+\_\+x1000@{End\+Range\+\_\+nm\+\_\+x1000}!Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}}
+\subsubsection{\texorpdfstring{End\+Range\+\_\+nm\+\_\+x1000}{EndRange\_nm\_x1000}}
+{\footnotesize\ttfamily uint32\+\_\+t Quantum\+Lib\+::\+Zone\+\_\+t\+::\+End\+Range\+\_\+nm\+\_\+x1000}
+
+
+
+End Range in (outer Radius) Nautical Miles x 1000 (e.\+g. 1.\+5nm = 1500) 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_zone__t_a65300b62b7f60ed8427ea34cb650b773}\label{struct_quantum_lib_1_1_zone__t_a65300b62b7f60ed8427ea34cb650b773}} 
+\index{Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}!Id@{Id}}
+\index{Id@{Id}!Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}}
+\subsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily uint8\+\_\+t Quantum\+Lib\+::\+Zone\+\_\+t\+::\+Id}
+
+
+
+0 or 1. Supports 2 Guard Zones and/or 2 Auto Acquire Zones 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_zone__t_aeee0428f3f061906525c2f694c2eff12}\label{struct_quantum_lib_1_1_zone__t_aeee0428f3f061906525c2f694c2eff12}} 
+\index{Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}!Start\+Angle\+\_\+degs\+\_\+x10@{Start\+Angle\+\_\+degs\+\_\+x10}}
+\index{Start\+Angle\+\_\+degs\+\_\+x10@{Start\+Angle\+\_\+degs\+\_\+x10}!Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}}
+\subsubsection{\texorpdfstring{Start\+Angle\+\_\+degs\+\_\+x10}{StartAngle\_degs\_x10}}
+{\footnotesize\ttfamily uint32\+\_\+t Quantum\+Lib\+::\+Zone\+\_\+t\+::\+Start\+Angle\+\_\+degs\+\_\+x10}
+
+
+
+Start Angle in degrees x 10 (e.\+g 359.\+4 degrees = 3954) 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_zone__t_abbb3333cca9fe0ba588ff587dd28a66a}\label{struct_quantum_lib_1_1_zone__t_abbb3333cca9fe0ba588ff587dd28a66a}} 
+\index{Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}!Start\+Range\+\_\+nm\+\_\+x1000@{Start\+Range\+\_\+nm\+\_\+x1000}}
+\index{Start\+Range\+\_\+nm\+\_\+x1000@{Start\+Range\+\_\+nm\+\_\+x1000}!Quantum\+Lib\+::\+Zone\+\_\+t@{Quantum\+Lib\+::\+Zone\+\_\+t}}
+\subsubsection{\texorpdfstring{Start\+Range\+\_\+nm\+\_\+x1000}{StartRange\_nm\_x1000}}
+{\footnotesize\ttfamily uint32\+\_\+t Quantum\+Lib\+::\+Zone\+\_\+t\+::\+Start\+Range\+\_\+nm\+\_\+x1000}
+
+
+
+Start Range (inner radius) in Nautical Miles x 1000 (e.\+g. 1.\+5nm = 1500) 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\mbox{\hyperlink{_quantum_lib_types_8h}{Quantum\+Lib\+Types.\+h}}\end{DoxyCompactItemize}

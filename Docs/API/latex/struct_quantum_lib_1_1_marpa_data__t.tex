@@ -1,0 +1,222 @@
+\hypertarget{struct_quantum_lib_1_1_marpa_data__t}{}\section{Quantum\+Lib\+:\+:Marpa\+Data\+\_\+t Struct Reference}
+\label{struct_quantum_lib_1_1_marpa_data__t}\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+
+
+{\ttfamily \#include $<$Quantum\+Lib\+Types.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a0cce669685dd1f592f3e3f49edd04cac}{Id}}
+\begin{DoxyCompactList}\small\item\em Target Id 0-\/24. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a9a4ca2c1d1339b879ae1e15e4cb29883}{Valid}}
+\begin{DoxyCompactList}\small\item\em Valid falg true/false. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_aff59bc5eced1f3368a7bde234b0fd79b}{Auto\+Acquired}}
+\begin{DoxyCompactList}\small\item\em Auto Acquired Target true/false. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9e}{e\+Target\+State\+\_\+t}} \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_af9e31e0f8f5b894859b08e9e7b36de18}{State}}
+\begin{DoxyCompactList}\small\item\em Target state, acquiring, safe, dangerous, lost. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a6b6961c34e9aabbbacca9ee2da75efaf}{Target\+Range\+\_\+m}}
+\begin{DoxyCompactList}\small\item\em Target Range from own vessel in metres. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a61c66e1b61e724254ba2e6db2fc43b52}{Target\+Bearing\+\_\+degs}}
+\begin{DoxyCompactList}\small\item\em Target Relative Bearing from own vessel in degrees. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a3ba68621eb664a06d8ff89367e12b88d}{Target\+True\+Bearing\+\_\+degs}}
+\begin{DoxyCompactList}\small\item\em Target True Bearing from own vessel in degrees -\/ relative to true north. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_ab4dc9b119ae1eb0b4973254750fc04c1}{Rel\+Target\+Speed\+\_\+mps}}
+\begin{DoxyCompactList}\small\item\em Target speed in metres per second, relative to own vessel. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a5e5047f6cb2244d2b547931151b8053d}{Rel\+Target\+Course\+\_\+degs}}
+\begin{DoxyCompactList}\small\item\em Target course in degrees, relative to own vessel. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a295cd85270bb01f6d58c9ff442a9d50d}{True\+Target\+Speed\+\_\+mps}}
+\begin{DoxyCompactList}\small\item\em Target true speed in metres per second, ground stabilised (S\+OG) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a9e396415e46fdf5daa123eabaf06eb19}{True\+Target\+Course\+\_\+degs}}
+\begin{DoxyCompactList}\small\item\em Target true course in degrees, ground stabilised (C\+OG) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_ad1662ab0801a78c8b7610363ba4b0db9}{Closest\+Point\+Of\+Approach\+\_\+m}}
+\begin{DoxyCompactList}\small\item\em Closest Point of approach in metres. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a3a54e31b40d50407ce52ef42d464c4cf}{Time\+To\+Closet\+Point\+\_\+secs}}
+\begin{DoxyCompactList}\small\item\em Time to closest point of approach in seconds. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a2819a023db3040c1b026f14fddae91c8}{Heading\+At\+Last\+Update\+\_\+degs}}
+\begin{DoxyCompactList}\small\item\em Own vessel heading at time of last contact in degree. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a3bc2c4ec0f98759e04d5561e61857637}{Target\+Going\+Towards\+Closet\+Point}}
+\begin{DoxyCompactList}\small\item\em True if Closest point of approach has not yet been reached, false if relative target motion away from own vessel. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_quantum_lib_1_1_marpa_data__t_a9f2d5b26e2eee4e6062655ac0f75b81d}{Target\+True\+Data\+Valid}}
+\begin{DoxyCompactList}\small\item\em Set true/false if S\+O\+G/\+C\+OG available. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure defining information about a tracked target.~\newline
+Each tracked marpa target maintains one of these structures.~\newline
+S\+OG and C\+OG are required to Maintain True data.~\newline
+If S\+OG and C\+OG not available then Target\+True\+Data\+Valid is set to false.~\newline
+True\+Target\+Sped\+\_\+mps and True\+Target\+Course\+\_\+degs are only valid if S\+OG and C\+OG are present.~\newline
+Notifications are sent to Marpa\+Data\+Changed callback function. \begin{DoxySeeAlso}{See also}
+Marpa\+Data\+Changed 
+
+\mbox{\hyperlink{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9e}{e\+Target\+State\+\_\+t}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_aff59bc5eced1f3368a7bde234b0fd79b}\label{struct_quantum_lib_1_1_marpa_data__t_aff59bc5eced1f3368a7bde234b0fd79b}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Auto\+Acquired@{Auto\+Acquired}}
+\index{Auto\+Acquired@{Auto\+Acquired}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Auto\+Acquired}{AutoAcquired}}
+{\footnotesize\ttfamily bool Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Auto\+Acquired}
+
+
+
+Auto Acquired Target true/false. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_ad1662ab0801a78c8b7610363ba4b0db9}\label{struct_quantum_lib_1_1_marpa_data__t_ad1662ab0801a78c8b7610363ba4b0db9}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Closest\+Point\+Of\+Approach\+\_\+m@{Closest\+Point\+Of\+Approach\+\_\+m}}
+\index{Closest\+Point\+Of\+Approach\+\_\+m@{Closest\+Point\+Of\+Approach\+\_\+m}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Closest\+Point\+Of\+Approach\+\_\+m}{ClosestPointOfApproach\_m}}
+{\footnotesize\ttfamily float Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Closest\+Point\+Of\+Approach\+\_\+m}
+
+
+
+Closest Point of approach in metres. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a2819a023db3040c1b026f14fddae91c8}\label{struct_quantum_lib_1_1_marpa_data__t_a2819a023db3040c1b026f14fddae91c8}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Heading\+At\+Last\+Update\+\_\+degs@{Heading\+At\+Last\+Update\+\_\+degs}}
+\index{Heading\+At\+Last\+Update\+\_\+degs@{Heading\+At\+Last\+Update\+\_\+degs}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Heading\+At\+Last\+Update\+\_\+degs}{HeadingAtLastUpdate\_degs}}
+{\footnotesize\ttfamily float Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Heading\+At\+Last\+Update\+\_\+degs}
+
+
+
+Own vessel heading at time of last contact in degree. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a0cce669685dd1f592f3e3f49edd04cac}\label{struct_quantum_lib_1_1_marpa_data__t_a0cce669685dd1f592f3e3f49edd04cac}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Id@{Id}}
+\index{Id@{Id}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily uint32\+\_\+t Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Id}
+
+
+
+Target Id 0-\/24. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a5e5047f6cb2244d2b547931151b8053d}\label{struct_quantum_lib_1_1_marpa_data__t_a5e5047f6cb2244d2b547931151b8053d}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Rel\+Target\+Course\+\_\+degs@{Rel\+Target\+Course\+\_\+degs}}
+\index{Rel\+Target\+Course\+\_\+degs@{Rel\+Target\+Course\+\_\+degs}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Rel\+Target\+Course\+\_\+degs}{RelTargetCourse\_degs}}
+{\footnotesize\ttfamily float Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Rel\+Target\+Course\+\_\+degs}
+
+
+
+Target course in degrees, relative to own vessel. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_ab4dc9b119ae1eb0b4973254750fc04c1}\label{struct_quantum_lib_1_1_marpa_data__t_ab4dc9b119ae1eb0b4973254750fc04c1}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Rel\+Target\+Speed\+\_\+mps@{Rel\+Target\+Speed\+\_\+mps}}
+\index{Rel\+Target\+Speed\+\_\+mps@{Rel\+Target\+Speed\+\_\+mps}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Rel\+Target\+Speed\+\_\+mps}{RelTargetSpeed\_mps}}
+{\footnotesize\ttfamily float Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Rel\+Target\+Speed\+\_\+mps}
+
+
+
+Target speed in metres per second, relative to own vessel. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_af9e31e0f8f5b894859b08e9e7b36de18}\label{struct_quantum_lib_1_1_marpa_data__t_af9e31e0f8f5b894859b08e9e7b36de18}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!State@{State}}
+\index{State@{State}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_quantum_lib_ab53e7395955c4dfb725e2ff41809ca9e}{e\+Target\+State\+\_\+t}} Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+State}
+
+
+
+Target state, acquiring, safe, dangerous, lost. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a61c66e1b61e724254ba2e6db2fc43b52}\label{struct_quantum_lib_1_1_marpa_data__t_a61c66e1b61e724254ba2e6db2fc43b52}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Target\+Bearing\+\_\+degs@{Target\+Bearing\+\_\+degs}}
+\index{Target\+Bearing\+\_\+degs@{Target\+Bearing\+\_\+degs}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Target\+Bearing\+\_\+degs}{TargetBearing\_degs}}
+{\footnotesize\ttfamily float Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Target\+Bearing\+\_\+degs}
+
+
+
+Target Relative Bearing from own vessel in degrees. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a3bc2c4ec0f98759e04d5561e61857637}\label{struct_quantum_lib_1_1_marpa_data__t_a3bc2c4ec0f98759e04d5561e61857637}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Target\+Going\+Towards\+Closet\+Point@{Target\+Going\+Towards\+Closet\+Point}}
+\index{Target\+Going\+Towards\+Closet\+Point@{Target\+Going\+Towards\+Closet\+Point}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Target\+Going\+Towards\+Closet\+Point}{TargetGoingTowardsClosetPoint}}
+{\footnotesize\ttfamily bool Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Target\+Going\+Towards\+Closet\+Point}
+
+
+
+True if Closest point of approach has not yet been reached, false if relative target motion away from own vessel. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a6b6961c34e9aabbbacca9ee2da75efaf}\label{struct_quantum_lib_1_1_marpa_data__t_a6b6961c34e9aabbbacca9ee2da75efaf}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Target\+Range\+\_\+m@{Target\+Range\+\_\+m}}
+\index{Target\+Range\+\_\+m@{Target\+Range\+\_\+m}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Target\+Range\+\_\+m}{TargetRange\_m}}
+{\footnotesize\ttfamily float Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Target\+Range\+\_\+m}
+
+
+
+Target Range from own vessel in metres. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a3ba68621eb664a06d8ff89367e12b88d}\label{struct_quantum_lib_1_1_marpa_data__t_a3ba68621eb664a06d8ff89367e12b88d}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Target\+True\+Bearing\+\_\+degs@{Target\+True\+Bearing\+\_\+degs}}
+\index{Target\+True\+Bearing\+\_\+degs@{Target\+True\+Bearing\+\_\+degs}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Target\+True\+Bearing\+\_\+degs}{TargetTrueBearing\_degs}}
+{\footnotesize\ttfamily float Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Target\+True\+Bearing\+\_\+degs}
+
+
+
+Target True Bearing from own vessel in degrees -\/ relative to true north. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a9f2d5b26e2eee4e6062655ac0f75b81d}\label{struct_quantum_lib_1_1_marpa_data__t_a9f2d5b26e2eee4e6062655ac0f75b81d}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Target\+True\+Data\+Valid@{Target\+True\+Data\+Valid}}
+\index{Target\+True\+Data\+Valid@{Target\+True\+Data\+Valid}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Target\+True\+Data\+Valid}{TargetTrueDataValid}}
+{\footnotesize\ttfamily bool Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Target\+True\+Data\+Valid}
+
+
+
+Set true/false if S\+O\+G/\+C\+OG available. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a3a54e31b40d50407ce52ef42d464c4cf}\label{struct_quantum_lib_1_1_marpa_data__t_a3a54e31b40d50407ce52ef42d464c4cf}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Time\+To\+Closet\+Point\+\_\+secs@{Time\+To\+Closet\+Point\+\_\+secs}}
+\index{Time\+To\+Closet\+Point\+\_\+secs@{Time\+To\+Closet\+Point\+\_\+secs}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Time\+To\+Closet\+Point\+\_\+secs}{TimeToClosetPoint\_secs}}
+{\footnotesize\ttfamily uint32\+\_\+t Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Time\+To\+Closet\+Point\+\_\+secs}
+
+
+
+Time to closest point of approach in seconds. 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a9e396415e46fdf5daa123eabaf06eb19}\label{struct_quantum_lib_1_1_marpa_data__t_a9e396415e46fdf5daa123eabaf06eb19}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!True\+Target\+Course\+\_\+degs@{True\+Target\+Course\+\_\+degs}}
+\index{True\+Target\+Course\+\_\+degs@{True\+Target\+Course\+\_\+degs}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{True\+Target\+Course\+\_\+degs}{TrueTargetCourse\_degs}}
+{\footnotesize\ttfamily float Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+True\+Target\+Course\+\_\+degs}
+
+
+
+Target true course in degrees, ground stabilised (C\+OG) 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a295cd85270bb01f6d58c9ff442a9d50d}\label{struct_quantum_lib_1_1_marpa_data__t_a295cd85270bb01f6d58c9ff442a9d50d}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!True\+Target\+Speed\+\_\+mps@{True\+Target\+Speed\+\_\+mps}}
+\index{True\+Target\+Speed\+\_\+mps@{True\+Target\+Speed\+\_\+mps}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{True\+Target\+Speed\+\_\+mps}{TrueTargetSpeed\_mps}}
+{\footnotesize\ttfamily float Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+True\+Target\+Speed\+\_\+mps}
+
+
+
+Target true speed in metres per second, ground stabilised (S\+OG) 
+
+\mbox{\Hypertarget{struct_quantum_lib_1_1_marpa_data__t_a9a4ca2c1d1339b879ae1e15e4cb29883}\label{struct_quantum_lib_1_1_marpa_data__t_a9a4ca2c1d1339b879ae1e15e4cb29883}} 
+\index{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}!Valid@{Valid}}
+\index{Valid@{Valid}!Quantum\+Lib\+::\+Marpa\+Data\+\_\+t@{Quantum\+Lib\+::\+Marpa\+Data\+\_\+t}}
+\subsubsection{\texorpdfstring{Valid}{Valid}}
+{\footnotesize\ttfamily bool Quantum\+Lib\+::\+Marpa\+Data\+\_\+t\+::\+Valid}
+
+
+
+Valid falg true/false. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Work/\+Repos/\+Radar-\/\+S\+D\+K/\+Quantum\+Lib/\+Quantum\+Lib/\+Include/\mbox{\hyperlink{_quantum_lib_types_8h}{Quantum\+Lib\+Types.\+h}}\end{DoxyCompactItemize}
